@@ -1,0 +1,262 @@
+[gd_scene load_steps=7 format=3 uid="uid://cdh430445qvyh"]
+
+[ext_resource type="Script" path="res://Microgame.gd" id="1_nt7sh"]
+[ext_resource type="Script" path="res://MicrogameOverlay.gd" id="2_bejfk"]
+[ext_resource type="Script" path="res://MicrogameTimer.gd" id="3_23yg5"]
+
+[sub_resource type="Animation" id="Animation_gw4ir"]
+resource_name = "fade_in"
+length = 0.7
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MicrogameOverlay/Control/ActionLabel:modulate:r")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(),
+"points": PackedFloat32Array(),
+"times": PackedFloat32Array()
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MicrogameOverlay/Control/ActionLabel:modulate:g")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(),
+"points": PackedFloat32Array(),
+"times": PackedFloat32Array()
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("MicrogameOverlay/Control/ActionLabel:modulate:b")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(),
+"points": PackedFloat32Array(),
+"times": PackedFloat32Array()
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("MicrogameOverlay/Control/ActionLabel:modulate:a")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.0834995, 0.489125, 1, -0.203624, -0.07186, 0.25, 0),
+"times": PackedFloat32Array(0, 0.3)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("MicrogameOverlay/Control/ActionLabel:scale:x")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(2, -0.25, 0, 0.1, -0.00122654, 0.5, -0.0498572, 0.794378, 0.25, 0),
+"times": PackedFloat32Array(0, 0.2)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("MicrogameOverlay/Control/ActionLabel:scale:y")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(2, -0.25, 0, 0.1, -0.00122654, 0.5, -0.0519, 0.824561, 0.25, 0),
+"times": PackedFloat32Array(0, 0.2)
+}
+
+[sub_resource type="Animation" id="Animation_q5lxk"]
+resource_name = "fade_out"
+length = 0.8
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MicrogameOverlay/Control/ActionLabel:modulate:r")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(),
+"points": PackedFloat32Array(),
+"times": PackedFloat32Array()
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MicrogameOverlay/Control/ActionLabel:modulate:g")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(),
+"points": PackedFloat32Array(),
+"times": PackedFloat32Array()
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("MicrogameOverlay/Control/ActionLabel:modulate:b")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(),
+"points": PackedFloat32Array(),
+"times": PackedFloat32Array()
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("MicrogameOverlay/Control/ActionLabel:modulate:a")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.0827552, -1.12444, 0, -0.130728, 0.0659774, 0.25, 0),
+"times": PackedFloat32Array(0, 0.3)
+}
+tracks/4/type = "method"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("MicrogameOverlay")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.00507024),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"fade_almost_done"
+}]
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("MicrogameOverlay/Control/ActionLabel:scale:x")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0.5, -0.25, 0, 0.1, -0.349116, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.6)
+}
+tracks/6/type = "bezier"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("MicrogameOverlay/Control/ActionLabel:scale:y")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0.5, -0.25, 0, 0.1, -0.349116, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.6)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_u85nl"]
+_data = {
+"fade_in": SubResource("Animation_gw4ir"),
+"fade_out": SubResource("Animation_q5lxk")
+}
+
+[node name="Microgame" type="Node2D"]
+editor_description = "Please do not edit Microgame.tscn directly, instead create an inherited scene for your microgame.
+
+If you want to make a 3D microgame, you can safely change the type of this node to a Node3D."
+script = ExtResource("1_nt7sh")
+metadata/_edit_lock_ = true
+
+[node name="MicrogameTimer" type="Timer" parent="."]
+editor_description = "This is the timer that will be used to time your microgame. You can change min_time and max_time to alter the amount of time given to the player."
+one_shot = true
+script = ExtResource("3_23yg5")
+min_time = 3.0
+max_time = 6.0
+
+[node name="MicrogameOverlay" type="CanvasLayer" parent="."]
+editor_description = "This is the CanvasLayer where the UI will be drawn. I wouldn't reccomend adding extra UI to your microgame, but if you do, you should do it by adding a new CanvasLayer instead of using this one."
+script = ExtResource("2_bejfk")
+
+[node name="Control" type="Control" parent="MicrogameOverlay"]
+editor_description = "This Control contains the UI that gets overlaid on top of your microgame."
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[node name="DangerZone" type="ColorRect" parent="MicrogameOverlay/Control"]
+editor_description = "This is the area where there will be some UI elements that may obscure parts of your game. Please do not put anything important behind this, or else it may be obscured."
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.901235
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 0, 0, 0.180392)
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
+
+[node name="TimerBar" type="ProgressBar" parent="MicrogameOverlay/Control"]
+unique_name_in_owner = true
+editor_description = "This is the bar that displays how much time the player has left to complete your microgame. Its appearance is temporary. Do not edit it, as your changes will not be reflected in the final game."
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -30.0
+grow_horizontal = 2
+grow_vertical = 0
+max_value = 1.0
+step = 0.0
+value = 1.0
+metadata/_edit_lock_ = true
+
+[node name="ActionLabel" type="Label" parent="MicrogameOverlay/Control"]
+editor_description = "This is the Label that tells the player what action they must take in your microgame. Please edit the text of this Label in your inherited scene to help players play your microgame. It should contain a clear action that best describes what players should do in your microgame. Ideally, it would be a single verb, but if your game's action cannot be boiled down to a single word, a short phrase will suffice."
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -89.0
+offset_bottom = 89.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2, 2)
+pivot_offset = Vector2(576, 89)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 36
+theme_override_font_sizes/font_size = 128
+text = "<INSERT-ACTION>"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="MicrogameOverlay"]
+editor_description = "This AnimationPlayer controls the animation of the action label. Changes that you make in this AnimationPlayer will not be reflected in the final game. Use a seperate AnimationPlayer if you want to make your own animations for your microgame."
+root_node = NodePath("../..")
+autoplay = "fade_in"
+libraries = {
+"": SubResource("AnimationLibrary_u85nl")
+}
+
+[connection signal="lost" from="." to="." method="_on_game_lost"]
+[connection signal="won" from="." to="." method="_on_game_won"]
+[connection signal="timeout" from="MicrogameTimer" to="." method="_on_timeout"]
+[connection signal="timeout" from="MicrogameTimer" to="MicrogameTimer" method="_on_timeout"]
+[connection signal="start_game" from="MicrogameOverlay" to="." method="_on_start_game"]
+[connection signal="start_game" from="MicrogameOverlay" to="MicrogameTimer" method="_on_start_game"]
+[connection signal="animation_finished" from="MicrogameOverlay/AnimationPlayer" to="MicrogameOverlay" method="_on_animation_player_animation_finished"]

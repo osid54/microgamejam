@@ -1,0 +1,14 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1700071620
+icon.svg::CompressedTexture2D::2423869631650150748::1699909491::1699909496::1::::<><>::
+Microgame.gd::GDScript::-1::1700062985::0::1::::Microgame<>Node<>::
+Microgame.tscn::PackedScene::4999670696839735243::1700071608::0::1::::<><>::res://Microgame.gd<>res://MicrogameOverlay.gd<>res://MicrogameTimer.gd
+MicrogameOverlay.gd::GDScript::-1::1700064193::0::1::::<>CanvasLayer<>::
+MicrogameTimer.gd::GDScript::-1::1700062216::0::1::::<>Timer<>::
+::res://singletons/::1700062904
+GlobalData.gd::GDScript::-1::1700062329::0::1::::<>Node<>::
+InputHelper.gd::GDScript::-1::1688922932::0::1::::<>Node<>::
+Saver.gd::GDScript::-1::1688922932::0::1::::<>Node<>::
+::res://ui/::1700063733
+InputLabel.gd::GDScript::-1::1700063537::0::1::::InputLabel<>Label<>::
+InputLabel.tscn::PackedScene::5382668532263379817::1700063733::0::1::::<><>::res://ui/InputLabel.gd

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cixn08sngghtx"]
+
+[ext_resource type="Script" path="res://ui/InputLabel.gd" id="1_un0is"]
+
+[node name="InputLabel" type="Label"]
+editor_description = "This is a label that will automatically update with the key bindings that the user has set. You can use it to tell the player which buttons to press in your microgame."
+text = "Press {up}, {right}, and {action}"
+script = ExtResource("1_un0is")
