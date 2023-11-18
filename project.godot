@@ -26,6 +26,10 @@ Saver="*res://singletons/Saver.gd"
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 
+[filesystem]
+
+import/blender/enabled=false
+
 [input]
 
 up={

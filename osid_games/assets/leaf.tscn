@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://t0vpxbfp7cp5"]
+[gd_scene load_steps=4 format=3 uid="uid://t0vpxbfp7cp5"]
 
 [ext_resource type="Texture2D" uid="uid://bv62fgllf4ebd" path="res://osid_games/sprites/leaves3.png" id="1_d7pje"]
 
@@ -55,7 +55,10 @@ func makeGold():
 	$Sprite2D/ColorRect.visible = true
 "
 
-[node name="leaf" type="Node2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fd5ws"]
+size = Vector2(64, 64)
+
+[node name="leaf" type="Area2D"]
 script = SubResource("GDScript_cwxx0")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -76,3 +79,6 @@ offset_bottom = -64.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(1, 1, 0, 0.588235)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_fd5ws")

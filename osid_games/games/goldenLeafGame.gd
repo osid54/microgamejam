@@ -14,3 +14,12 @@ func _on_start_game():
 			leaves[i].append(l)
 			add_child(l)
 	leaves.pick_random().pick_random().makeGold()
+	$Selector.position = Vector2(get_viewport().get_window().size.x/2.0, (get_viewport().get_window().size.y-64)/2.0)
+	$Selector.visible = true
+
+func _process(_delta):
+	if Input.is_action_just_pressed("action"):
+		if $Selector.checkLeaf():
+			won.emit()
+		else:
+			lost.emit()

@@ -1,4 +1,10 @@
+Area2D
+Node2D
+CollisionShape2D
+CanvasLayer
 ColorRect
+AnimatedSprite2D
+CharacterBody2D
 Sprite2D
 Marker2D
 InputLabel
@@ -7,6 +13,5 @@ ProgressBar
 Node3D
 AnimationPlayer
 Label
-CanvasLayer
 Control
 Button

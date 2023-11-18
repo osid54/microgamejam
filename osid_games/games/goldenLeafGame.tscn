@@ -1,12 +1,28 @@
-[gd_scene load_steps=4 format=3 uid="uid://s05e2y66ti2n"]
+[gd_scene load_steps=5 format=3 uid="uid://s05e2y66ti2n"]
 
 [ext_resource type="PackedScene" uid="uid://cdh430445qvyh" path="res://Microgame.tscn" id="1_sh0ec"]
 [ext_resource type="Script" path="res://osid_games/games/goldenLeafGame.gd" id="2_y1bf5"]
 [ext_resource type="PackedScene" uid="uid://t0vpxbfp7cp5" path="res://osid_games/assets/leaf.tscn" id="3_b27f2"]
+[ext_resource type="PackedScene" uid="uid://ej05ki8j1n5d" path="res://osid_games/assets/selector.tscn" id="4_6fy3h"]
 
 [node name="goldenLeafGame" instance=ExtResource("1_sh0ec")]
 script = ExtResource("2_y1bf5")
 leaf = ExtResource("3_b27f2")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." index="0"]
+layer = -1
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" index="0"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0901961, 0.254902, 0.227451, 1)
+
+[node name="Selector" parent="." index="1" instance=ExtResource("4_6fy3h")]
+visible = false
+z_index = 1
 
 [node name="ActionLabel" parent="MicrogameOverlay/Control" index="2"]
 text = "catch a gold"
