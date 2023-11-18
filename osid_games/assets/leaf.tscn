@@ -1,13 +1,78 @@
 [gd_scene load_steps=3 format=3 uid="uid://t0vpxbfp7cp5"]
 
-[ext_resource type="Texture2D" uid="uid://dqhbohk1d5k5b" path="res://osid_games/sprites/leaves.png" id="1_5ekua"]
-[ext_resource type="Script" path="res://osid_games/assets/leaf.gd" id="1_cwgn5"]
+[ext_resource type="Texture2D" uid="uid://bv62fgllf4ebd" path="res://osid_games/sprites/leaves3.png" id="1_d7pje"]
+
+[sub_resource type="GDScript" id="GDScript_cwxx0"]
+script/source = "extends Node2D
+
+var floatDirection := 1
+var floatMax := 3
+var floatSpeed := 1.0
+var startPos : float
+
+var rotateDirection := 1
+var rotMax := PI/2
+var rotSpeed := PI/8
+var startRot : float
+
+var isGolden := false
+
+func _ready():
+	startPos = position.x
+	startRot = rotation
+	if randi_range(0,1):
+		floatDirection *= -1
+	if randi_range(0,1):
+		rotateDirection *= -1
+	floatSpeed *= randf_range(.5,1)
+	rotSpeed *= randf_range(.2,1)
+	#modulate = Color(0.6706, 0.2745, 0.0706)
+	$Sprite2D.frame = randi_range(0,8)
+	modulate = Color(randf_range(.8,1)*modulate.r,
+				randf_range(.6,1)*modulate.g,
+				randf_range(.6,1)*modulate.b)
+	if randi_range(0,1):
+		$Sprite2D.flip_h = true
+	if randi_range(0,1):
+		$Sprite2D.flip_v = true
+	$Sprite2D.rotation_degrees = randi_range(-180,180)
+	
+func _process(delta):
+	if abs(startPos - position.x) < floatMax:
+		position.x += floatSpeed*delta*rotateDirection
+	else:
+		floatDirection *= -1
+		position.x += floatSpeed*delta*rotateDirection
+	if abs(startRot - rotation) < rotMax:
+		rotation += rotSpeed*delta*rotateDirection
+	else:
+		rotateDirection *= -1
+		rotation += rotSpeed*delta*rotateDirection
+		
+func makeGold():
+	isGolden = true
+	modulate = Color(1,1,1)
+	$Sprite2D/ColorRect.visible = true
+"
 
 [node name="leaf" type="Node2D"]
-script = ExtResource("1_cwgn5")
+script = SubResource("GDScript_cwxx0")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-modulate = Color(0.670588, 0.27451, 0.0705882, 1)
-texture = ExtResource("1_5ekua")
+clip_children = 2
+texture = ExtResource("1_d7pje")
 hframes = 3
 vframes = 3
+
+[node name="ColorRect" type="ColorRect" parent="Sprite2D"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -64.0
+offset_right = -64.0
+offset_bottom = -64.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 0, 0.588235)
