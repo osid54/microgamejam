@@ -25,4 +25,4 @@ visible = false
 z_index = 1
 
 [node name="ActionLabel" parent="MicrogameOverlay/Control" index="2"]
-text = "catch a gold"
+text = "golden ticket"
