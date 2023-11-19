@@ -143,11 +143,10 @@ shape = SubResource("RectangleShape2D_fd5ws")
 
 [node name="deathP" type="GPUParticles2D" parent="."]
 emitting = false
-amount = 16
 process_material = SubResource("ParticleProcessMaterial_pryi2")
 texture = ExtResource("2_lrehs")
 one_shot = true
-explosiveness = 0.5
+explosiveness = 0.79
 randomness = 0.2
 
 [node name="winP" type="GPUParticles2D" parent="."]
