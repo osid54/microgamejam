@@ -1,5 +1,6 @@
 res://osid_games/games/goldenLeafGame.tscn
+res://osid_games/games/goldenLeafGame.gd
 res://osid_games/assets/leaf.tscn
 res://osid_games/assets/selector.tscn
 res://Microgame.tscn
-res://osid_games/games/goldenLeafGame.gd
+res://osid_games/assets/selector.gd

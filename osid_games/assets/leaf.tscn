@@ -63,10 +63,16 @@ func kill():
 		$deathP.emitting = true
 	else:
 		$winP.emitting = true
+		
+func move(y):
+	position = Vector2(startPos+randi_range(-256,256),-128)
+	for i in 128:
+		position = position.lerp(Vector2(startPos,y),(i+1)/128.0)
+		await get_tree().create_timer(randf_range(0.01,0.02)).timeout
 "
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fd5ws"]
-size = Vector2(64, 64)
+size = Vector2(80, 80)
 
 [sub_resource type="Gradient" id="Gradient_epw1p"]
 offsets = PackedFloat32Array(0.641975, 1)

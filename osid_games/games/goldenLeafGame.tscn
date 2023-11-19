@@ -26,7 +26,7 @@ z_index = 1
 
 [node name="MicrogameTimer" parent="." index="2"]
 min_time = 1.5
-max_time = 3.0
+max_time = 1.5
 
 [node name="ActionLabel" parent="MicrogameOverlay/Control" index="2"]
 text = "golden ticket"
