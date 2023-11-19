@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://t0vpxbfp7cp5"]
+[gd_scene load_steps=11 format=3 uid="uid://t0vpxbfp7cp5"]
 
 [ext_resource type="Texture2D" uid="uid://bv62fgllf4ebd" path="res://osid_games/sprites/leaves3.png" id="1_d7pje"]
+[ext_resource type="Texture2D" uid="uid://d2q6hopysal3i" path="res://osid_games/sprites/particleSquare.png" id="2_lrehs"]
 
 [sub_resource type="GDScript" id="GDScript_cwxx0"]
 script/source = "extends Node2D
@@ -28,9 +29,10 @@ func _ready():
 	rotSpeed *= randf_range(.2,1)
 	#modulate = Color(0.6706, 0.2745, 0.0706)
 	$Sprite2D.frame = randi_range(0,8)
-	modulate = Color(randf_range(.8,1)*modulate.r,
-				randf_range(.6,1)*modulate.g,
-				randf_range(.6,1)*modulate.b)
+	modulate = Color(randf_range(.7,1)*modulate.r,
+				randf_range(.5,1)*modulate.g,
+				randf_range(.5,1)*modulate.b)
+	$deathP.modulate = modulate
 	if randi_range(0,1):
 		$Sprite2D.flip_h = true
 	if randi_range(0,1):
@@ -53,10 +55,60 @@ func makeGold():
 	isGolden = true
 	modulate = Color(1,1,1)
 	$Sprite2D/ColorRect.visible = true
+
+func kill():
+	await get_tree().create_timer(randf_range(0,.5)).timeout
+	if !isGolden:
+		$Sprite2D.visible = false
+		$deathP.emitting = true
+	else:
+		$winP.emitting = true
 "
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fd5ws"]
 size = Vector2(64, 64)
+
+[sub_resource type="Gradient" id="Gradient_epw1p"]
+offsets = PackedFloat32Array(0.641975, 1)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_jc33w"]
+gradient = SubResource("Gradient_epw1p")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_pryi2"]
+particle_flag_disable_z = true
+spread = 180.0
+gravity = Vector3(0, 0, 0)
+initial_velocity_min = 100.0
+initial_velocity_max = 120.0
+orbit_velocity_min = 0.0
+orbit_velocity_max = 0.0
+damping_min = 50.0
+damping_max = 50.0
+scale_min = 2.0
+scale_max = 2.0
+color_ramp = SubResource("GradientTexture1D_jc33w")
+
+[sub_resource type="Gradient" id="Gradient_s176w"]
+offsets = PackedFloat32Array(0, 0.518519, 1)
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_nnkgy"]
+gradient = SubResource("Gradient_s176w")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_ajpva"]
+emission_shape = 6
+emission_ring_axis = Vector3(0, 0, 1)
+emission_ring_height = 0.0
+emission_ring_radius = 80.0
+emission_ring_inner_radius = 50.0
+particle_flag_disable_z = true
+gravity = Vector3(0, 0, 0)
+orbit_velocity_min = 0.0
+orbit_velocity_max = 0.0
+scale_min = 2.0
+scale_max = 2.0
+color_ramp = SubResource("GradientTexture1D_nnkgy")
 
 [node name="leaf" type="Area2D"]
 script = SubResource("GDScript_cwxx0")
@@ -82,3 +134,30 @@ color = Color(1, 1, 0, 0.588235)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_fd5ws")
+
+[node name="deathP" type="GPUParticles2D" parent="."]
+emitting = false
+amount = 16
+process_material = SubResource("ParticleProcessMaterial_pryi2")
+texture = ExtResource("2_lrehs")
+one_shot = true
+explosiveness = 0.5
+randomness = 0.2
+
+[node name="winP" type="GPUParticles2D" parent="."]
+clip_children = 2
+emitting = false
+amount = 16
+process_material = SubResource("ParticleProcessMaterial_ajpva")
+texture = ExtResource("2_lrehs")
+
+[node name="ColorRect" type="ColorRect" parent="winP"]
+custom_minimum_size = Vector2(256, 256)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 0, 0.772549)

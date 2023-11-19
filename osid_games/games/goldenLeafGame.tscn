@@ -18,11 +18,15 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.0901961, 0.254902, 0.227451, 1)
+color = Color(0.137255, 0.294118, 0.192157, 1)
 
 [node name="Selector" parent="." index="1" instance=ExtResource("4_6fy3h")]
 visible = false
 z_index = 1
+
+[node name="MicrogameTimer" parent="." index="2"]
+min_time = 1.5
+max_time = 3.0
 
 [node name="ActionLabel" parent="MicrogameOverlay/Control" index="2"]
 text = "golden ticket"
