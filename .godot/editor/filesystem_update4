@@ -1,1 +1,2 @@
-res://Microgame.tscn
+res://osid_games/swordGame/main/swordDuelGame.tscn
+res://osid_games/swordGame/main/swordDuelGame.gd

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cf78ce0hw0e0c"
-path="res://.godot/imported/fish.png-e6109cc372db3584b94c5b332a11763c.ctex"
+path="res://.godot/imported/fish.png-8a1e7199d1805eff2075318906f8089b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://osid_games/leafGame/sprites/fish.png"
-dest_files=["res://.godot/imported/fish.png-e6109cc372db3584b94c5b332a11763c.ctex"]
+source_file="res://unused/fish.png"
+dest_files=["res://.godot/imported/fish.png-8a1e7199d1805eff2075318906f8089b.ctex"]
 
 [params]
 

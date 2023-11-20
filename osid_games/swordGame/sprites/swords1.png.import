@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c02lxu60qtq3n"
-path="res://.godot/imported/mine.png-c0ecf54d16883d1946395e49480434d7.ctex"
+uid="uid://bhc3ki50af4ex"
+path="res://.godot/imported/swords1.png-456ac0f6dd77b018a4b468439b274f44.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://osid_games/leafGame/sprites/mine.png"
-dest_files=["res://.godot/imported/mine.png-c0ecf54d16883d1946395e49480434d7.ctex"]
+source_file="res://osid_games/swordGame/sprites/swords1.png"
+dest_files=["res://.godot/imported/swords1.png-456ac0f6dd77b018a4b468439b274f44.ctex"]
 
 [params]
 

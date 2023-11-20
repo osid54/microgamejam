@@ -1,0 +1,51 @@
+[gd_scene load_steps=7 format=3 uid="uid://dt5r1xwgvm0lm"]
+
+[ext_resource type="PackedScene" uid="uid://cdh430445qvyh" path="res://Microgame.tscn" id="1_1q5ca"]
+[ext_resource type="Script" path="res://osid_games/swordGame/main/swordDuelGame.gd" id="2_jsng8"]
+
+[sub_resource type="Gradient" id="Gradient_xx856"]
+colors = PackedColorArray(0.192157, 0.14902, 0.270588, 1, 0.0784314, 0.0588235, 0.2, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_xdq2c"]
+gradient = SubResource("Gradient_xx856")
+width = 128
+height = 128
+fill = 1
+fill_from = Vector2(0.512195, 0.518293)
+
+[sub_resource type="Gradient" id="Gradient_7ivsr"]
+colors = PackedColorArray(0.101787, 0.0836, 0.22, 1, 0.00999999, 0, 0.05, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_aeavt"]
+gradient = SubResource("Gradient_7ivsr")
+width = 128
+fill_to = Vector2(0, 1)
+
+[node name="swordDuelGame" instance=ExtResource("1_1q5ca")]
+script = ExtResource("2_jsng8")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." index="0"]
+layer = -1
+
+[node name="back" type="TextureRect" parent="CanvasLayer" index="0"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_xdq2c")
+stretch_mode = 6
+
+[node name="floor" type="TextureRect" parent="CanvasLayer" index="1"]
+custom_minimum_size = Vector2(0, 128)
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = SubResource("GradientTexture2D_aeavt")
+
+[node name="MicrogameTimer" parent="." index="1"]
+min_time = 5.0
+max_time = 10.0

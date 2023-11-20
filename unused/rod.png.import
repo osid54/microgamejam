@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c7rwpcpuyyeat"
-path="res://.godot/imported/rodShadow.png-c73469ca4243321c207a4aaea2edc6fa.ctex"
+uid="uid://dc81hawqnyetg"
+path="res://.godot/imported/rod.png-2f4b68e4d084667a521ca5844ba88b63.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://osid_games/leafGame/sprites/rodShadow.png"
-dest_files=["res://.godot/imported/rodShadow.png-c73469ca4243321c207a4aaea2edc6fa.ctex"]
+source_file="res://unused/rod.png"
+dest_files=["res://.godot/imported/rod.png-2f4b68e4d084667a521ca5844ba88b63.ctex"]
 
 [params]
 
