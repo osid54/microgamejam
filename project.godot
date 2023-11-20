@@ -13,6 +13,7 @@ config_version=5
 config/name="microgamejam"
 run/main_scene="res://osid_games/leafGame/main/goldenLeafGame.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
+config/icon="res://osid_games/leafGame/sprites/leaves3.png"
 
 [autoload]
 
