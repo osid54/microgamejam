@@ -1,0 +1,52 @@
+[gd_scene load_steps=7 format=3 uid="uid://cuxlfopc1ohp8"]
+
+[ext_resource type="PackedScene" uid="uid://cdh430445qvyh" path="res://Microgame.tscn" id="1_6l23n"]
+[ext_resource type="Script" path="res://osid_games/leafGame/main/goldenLeafGame.gd" id="2_75o3d"]
+[ext_resource type="PackedScene" uid="uid://t0vpxbfp7cp5" path="res://osid_games/leafGame/assets/leaf.tscn" id="3_smave"]
+[ext_resource type="PackedScene" uid="uid://ej05ki8j1n5d" path="res://osid_games/leafGame/assets/selector.tscn" id="4_ixqnb"]
+
+[sub_resource type="Gradient" id="Gradient_xx856"]
+colors = PackedColorArray(0.137255, 0.294118, 0.192157, 1, 0.0627451, 0.160784, 0.0980392, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_kcxxe"]
+gradient = SubResource("Gradient_xx856")
+width = 128
+height = 128
+fill = 1
+fill_from = Vector2(0.512195, 0.518293)
+
+[node name="goldenLeafGame" instance=ExtResource("1_6l23n")]
+script = ExtResource("2_75o3d")
+leaf = ExtResource("3_smave")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." index="0"]
+layer = -1
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" index="0"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_kcxxe")
+stretch_mode = 6
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" index="1"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.137255, 0.294118, 0.192157, 1)
+
+[node name="Selector" parent="." index="1" instance=ExtResource("4_ixqnb")]
+visible = false
+z_index = 1
+
+[node name="MicrogameTimer" parent="." index="2"]
+min_time = 1.5
+max_time = 3.0
+
+[node name="ActionLabel" parent="MicrogameOverlay/Control" index="2"]
+text = "golden ticket"

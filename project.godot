@@ -11,9 +11,8 @@ config_version=5
 [application]
 
 config/name="microgamejam"
-run/main_scene="res://osid_games/games/goldenLeafGame.tscn"
+run/main_scene="res://osid_games/leafGame/main/goldenLeafGame.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
-config/icon="res://icon.svg"
 
 [autoload]
 

@@ -22,7 +22,7 @@ func _on_start_game():
 	set_process(true)
 
 @onready var timer_bar = %TimerBar
-func _process(delta):
+func _process(_delta):
 	# update the timer bar
 	timer_bar.value = time_left/wait_time
 
