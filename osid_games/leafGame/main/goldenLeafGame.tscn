@@ -6,9 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://ej05ki8j1n5d" path="res://osid_games/leafGame/assets/selector.tscn" id="4_ixqnb"]
 
 [sub_resource type="Gradient" id="Gradient_xx856"]
-colors = PackedColorArray(0.137255, 0.294118, 0.192157, 1, 0.0627451, 0.160784, 0.0980392, 1)
+colors = PackedColorArray(0.2016, 0.36, 0.24912, 1, 0.0784314, 0.184314, 0.2, 1)
 
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_kcxxe"]
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_7fpcd"]
 gradient = SubResource("Gradient_xx856")
 width = 128
 height = 128
@@ -22,23 +22,14 @@ leaf = ExtResource("3_smave")
 [node name="CanvasLayer" type="CanvasLayer" parent="." index="0"]
 layer = -1
 
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer" index="0"]
+[node name="back" type="TextureRect" parent="CanvasLayer" index="0"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = SubResource("GradientTexture2D_kcxxe")
+texture = SubResource("GradientTexture2D_7fpcd")
 stretch_mode = 6
-
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer" index="1"]
-visible = false
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.137255, 0.294118, 0.192157, 1)
 
 [node name="Selector" parent="." index="1" instance=ExtResource("4_ixqnb")]
 visible = false

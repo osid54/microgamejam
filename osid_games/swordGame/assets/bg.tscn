@@ -1,0 +1,248 @@
+[gd_scene load_steps=42 format=3 uid="uid://k148lkh024xh"]
+
+[ext_resource type="Texture2D" uid="uid://dpu0r0fiy1sjo" path="res://osid_games/swordGame/sprites/background/1.png" id="1_3u8uk"]
+[ext_resource type="Texture2D" uid="uid://ufa6p74qp3fn" path="res://osid_games/swordGame/sprites/background/2.png" id="2_8mfnb"]
+[ext_resource type="Texture2D" uid="uid://bbus5yipiw68" path="res://osid_games/swordGame/sprites/background/4.png" id="3_33dcf"]
+[ext_resource type="Texture2D" uid="uid://bwucb38jpd2m5" path="res://osid_games/swordGame/sprites/background/sky.png" id="4_sacxe"]
+[ext_resource type="Texture2D" uid="uid://6ioaopn5a7wr" path="res://osid_games/swordGame/sprites/background/moon.png" id="5_f1o4i"]
+[ext_resource type="Texture2D" uid="uid://bx12pa3lpgnau" path="res://osid_games/swordGame/sprites/background/hill1.png" id="6_gsmb2"]
+[ext_resource type="Texture2D" uid="uid://bv20jpecqtbio" path="res://osid_games/swordGame/sprites/background/hill2.png" id="7_lvy7x"]
+[ext_resource type="Texture2D" uid="uid://dd4xd473jfn84" path="res://osid_games/swordGame/sprites/background/tree1.png" id="8_7rtne"]
+[ext_resource type="Texture2D" uid="uid://ogtnhek4rxa6" path="res://osid_games/swordGame/sprites/background/tree2.png" id="9_ww2fi"]
+[ext_resource type="Texture2D" uid="uid://brrbcjd4c6k50" path="res://osid_games/swordGame/sprites/background/tree3.png" id="10_mawf3"]
+[ext_resource type="Texture2D" uid="uid://cprmpvssfbosa" path="res://osid_games/swordGame/sprites/background/tree4.png" id="11_721v3"]
+[ext_resource type="Texture2D" uid="uid://dbr1kmy3qlb6b" path="res://osid_games/swordGame/sprites/background/leaves (1).png" id="12_m7wbq"]
+[ext_resource type="Texture2D" uid="uid://03qn3kscd67f" path="res://osid_games/swordGame/sprites/background/leaves (2).png" id="13_6h54k"]
+[ext_resource type="Texture2D" uid="uid://3yfgmg2hljbu" path="res://osid_games/swordGame/sprites/background/leaves (3).png" id="14_8yvjg"]
+[ext_resource type="Texture2D" uid="uid://dgnsoneyy5via" path="res://osid_games/swordGame/sprites/background/leaves (4).png" id="15_7s76i"]
+[ext_resource type="Texture2D" uid="uid://ck6jnu40m0vp7" path="res://osid_games/swordGame/sprites/background/leaves (5).png" id="16_mlblr"]
+[ext_resource type="Texture2D" uid="uid://01xuojvax70c" path="res://osid_games/swordGame/sprites/background/leaves (6).png" id="17_4l28g"]
+[ext_resource type="Texture2D" uid="uid://by67sc5w0yktx" path="res://osid_games/swordGame/sprites/background/leaves (7).png" id="18_wcyls"]
+[ext_resource type="Texture2D" uid="uid://8apgg5pxoisa" path="res://osid_games/swordGame/sprites/background/leaves (8).png" id="19_ns15i"]
+[ext_resource type="Texture2D" uid="uid://1top4cyqxhx" path="res://osid_games/swordGame/sprites/background/leaves (9).png" id="20_skf12"]
+[ext_resource type="Texture2D" uid="uid://cct4g8lxre6lu" path="res://osid_games/swordGame/sprites/background/3.png" id="21_s8r4r"]
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_4jjk7"]
+polygon = PackedVector2Array(-554, -312, -561, -312, -561, 265, -576, 265, -576, -324, -554, -324)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_almjm"]
+polygon = PackedVector2Array(-463, -312, -537, -312, -537, -324, -463, -324)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_be11m"]
+polygon = PackedVector2Array(-418, -312, -437, -312, -437, -324, -418, -324)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_bwfo3"]
+polygon = PackedVector2Array(-328, -312, -414, -312, -414, -324, -328, -324)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_6rlk6"]
+polygon = PackedVector2Array(-297, -312, -307, -312, -307, -324, -297, -324)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_dqggk"]
+polygon = PackedVector2Array(-154, -312, -218, -312, -218, -324, -154, -324)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_0f4iq"]
+polygon = PackedVector2Array(-76, -312, -150, -312, -150, -324, -76, -324)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_0wsrs"]
+polygon = PackedVector2Array(101, -312, 11, -312, 11, -324, 101, -324)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_d2y3a"]
+polygon = PackedVector2Array(115, -312, 105, -312, 105, -324, 115, -324)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_psu2i"]
+polygon = PackedVector2Array(246, -312, 141, -312, 141, -324, 246, -324)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_jyra8"]
+polygon = PackedVector2Array(258, -312, 250, -312, 250, -324, 258, -324)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_c5sra"]
+polygon = PackedVector2Array(362, -312, 278, -312, 278, -324, 362, -324)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_0ga8q"]
+polygon = PackedVector2Array(497, -312, 453, -312, 453, -324, 497, -324)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_771lv"]
+polygon = PackedVector2Array(537, -312, 506, -312, 506, -324, 537, -324)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_0a3qv"]
+polygon = PackedVector2Array(576, 265, 561, 265, 561, -312, 554, -312, 554, -324, 576, -324)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_18127"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_7rtne")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ww2fi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_mawf3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_721v3")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_oqhbf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_m7wbq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_6h54k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_8yvjg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_7s76i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_mlblr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_4l28g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_wcyls")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_ns15i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_skf12")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_776ys"]
+polygon = PackedVector2Array(316, -173, 312, 175, 291, 175, 296, -173)
+
+[sub_resource type="Gradient" id="Gradient_nyhov"]
+colors = PackedColorArray(0.687851, 0.647859, 0.991436, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_xjuaj"]
+gradient = SubResource("Gradient_nyhov")
+width = 256
+height = 256
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.9, 0.1)
+metadata/_snap_enabled = true
+
+[node name="Node2D" type="Node2D"]
+
+[node name="1" type="Sprite2D" parent="."]
+texture = ExtResource("1_3u8uk")
+
+[node name="2" type="Sprite2D" parent="1"]
+texture = ExtResource("2_8mfnb")
+
+[node name="3" type="Sprite2D" parent="1"]
+texture = ExtResource("3_33dcf")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="1/3"]
+occluder = SubResource("OccluderPolygon2D_4jjk7")
+
+[node name="LightOccluder2D2" type="LightOccluder2D" parent="1/3"]
+occluder = SubResource("OccluderPolygon2D_almjm")
+
+[node name="LightOccluder2D3" type="LightOccluder2D" parent="1/3"]
+occluder = SubResource("OccluderPolygon2D_be11m")
+
+[node name="LightOccluder2D4" type="LightOccluder2D" parent="1/3"]
+occluder = SubResource("OccluderPolygon2D_bwfo3")
+
+[node name="LightOccluder2D5" type="LightOccluder2D" parent="1/3"]
+occluder = SubResource("OccluderPolygon2D_6rlk6")
+
+[node name="LightOccluder2D6" type="LightOccluder2D" parent="1/3"]
+occluder = SubResource("OccluderPolygon2D_dqggk")
+
+[node name="LightOccluder2D7" type="LightOccluder2D" parent="1/3"]
+occluder = SubResource("OccluderPolygon2D_0f4iq")
+
+[node name="LightOccluder2D8" type="LightOccluder2D" parent="1/3"]
+occluder = SubResource("OccluderPolygon2D_0wsrs")
+
+[node name="LightOccluder2D9" type="LightOccluder2D" parent="1/3"]
+occluder = SubResource("OccluderPolygon2D_d2y3a")
+
+[node name="LightOccluder2D10" type="LightOccluder2D" parent="1/3"]
+occluder = SubResource("OccluderPolygon2D_psu2i")
+
+[node name="LightOccluder2D11" type="LightOccluder2D" parent="1/3"]
+occluder = SubResource("OccluderPolygon2D_jyra8")
+
+[node name="LightOccluder2D12" type="LightOccluder2D" parent="1/3"]
+occluder = SubResource("OccluderPolygon2D_c5sra")
+
+[node name="LightOccluder2D13" type="LightOccluder2D" parent="1/3"]
+occluder = SubResource("OccluderPolygon2D_0ga8q")
+
+[node name="LightOccluder2D14" type="LightOccluder2D" parent="1/3"]
+occluder = SubResource("OccluderPolygon2D_771lv")
+
+[node name="LightOccluder2D15" type="LightOccluder2D" parent="1/3"]
+occluder = SubResource("OccluderPolygon2D_0a3qv")
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2(0, -32)
+
+[node name="Sky" type="Sprite2D" parent="Node2D"]
+clip_children = 2
+texture = ExtResource("4_sacxe")
+
+[node name="Moon" type="Sprite2D" parent="Node2D/Sky"]
+texture = ExtResource("5_f1o4i")
+
+[node name="Hill1" type="Sprite2D" parent="Node2D/Sky"]
+texture = ExtResource("6_gsmb2")
+
+[node name="Hill2" type="Sprite2D" parent="Node2D/Sky"]
+texture = ExtResource("7_lvy7x")
+
+[node name="tree" type="AnimatedSprite2D" parent="Node2D/Sky"]
+sprite_frames = SubResource("SpriteFrames_18127")
+autoplay = "default"
+frame_progress = 0.109665
+
+[node name="leaves" type="AnimatedSprite2D" parent="Node2D/Sky"]
+sprite_frames = SubResource("SpriteFrames_oqhbf")
+autoplay = "default"
+frame_progress = 0.694142
+
+[node name="window" type="Sprite2D" parent="Node2D"]
+texture = ExtResource("21_s8r4r")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Node2D/window"]
+position = Vector2(-608, 0)
+occluder = SubResource("OccluderPolygon2D_776ys")
+occluder_light_mask = 2
+
+[node name="LightOccluder2D2" type="LightOccluder2D" parent="Node2D/window"]
+occluder = SubResource("OccluderPolygon2D_776ys")
+occluder_light_mask = 2
+
+[node name="PointLight2D2" type="PointLight2D" parent="Node2D"]
+position = Vector2(0, 92.5)
+scale = Vector2(3.17188, 2.10547)
+color = Color(1, 1, 1, 0.168627)
+energy = 7.77
+shadow_enabled = true
+shadow_item_cull_mask = 2
+texture = SubResource("GradientTexture2D_xjuaj")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(0, -1679)
+scale = Vector2(0.805465, 2.40365)
+shadow_enabled = true
+texture = SubResource("GradientTexture2D_xjuaj")
+texture_scale = 6.13

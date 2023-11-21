@@ -59,6 +59,4 @@ animations = [{
 
 [node name="enemy" type="AnimatedSprite2D"]
 sprite_frames = SubResource("SpriteFrames_t0u8c")
-animation = &"sheath"
-frame = 2
-frame_progress = 1.0
+animation = &"unsheath"
