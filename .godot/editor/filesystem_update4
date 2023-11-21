@@ -1,6 +1,4 @@
-res://osid_games/leafGame/main/goldenLeafGame.tscn
 res://Microgame.tscn
 res://osid_games/swordGame/main/swordDuelGame.tscn
 res://osid_games/swordGame/assets/enemy.tscn
 res://osid_games/swordGame/assets/bg.tscn
-res://osid_games/swordGame/main/swordDuelGame.gd
