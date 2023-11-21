@@ -8,7 +8,7 @@
 [node name="swordDuelGame" instance=ExtResource("1_1q5ca")]
 script = ExtResource("2_jsng8")
 
-[node name="Node2D" parent="." index="0" instance=ExtResource("3_gchbb")]
+[node name="bg" parent="." index="0" instance=ExtResource("3_gchbb")]
 position = Vector2(576, 324)
 
 [node name="enemy" parent="." index="1" instance=ExtResource("3_luvxd")]

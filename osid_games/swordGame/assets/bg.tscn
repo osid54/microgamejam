@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=3 uid="uid://k148lkh024xh"]
+[gd_scene load_steps=44 format=3 uid="uid://k148lkh024xh"]
 
 [ext_resource type="Texture2D" uid="uid://dpu0r0fiy1sjo" path="res://osid_games/swordGame/sprites/background/1.png" id="1_3u8uk"]
 [ext_resource type="Texture2D" uid="uid://ufa6p74qp3fn" path="res://osid_games/swordGame/sprites/background/2.png" id="2_8mfnb"]
@@ -21,6 +21,7 @@
 [ext_resource type="Texture2D" uid="uid://8apgg5pxoisa" path="res://osid_games/swordGame/sprites/background/leaves (8).png" id="19_ns15i"]
 [ext_resource type="Texture2D" uid="uid://1top4cyqxhx" path="res://osid_games/swordGame/sprites/background/leaves (9).png" id="20_skf12"]
 [ext_resource type="Texture2D" uid="uid://cct4g8lxre6lu" path="res://osid_games/swordGame/sprites/background/3.png" id="21_s8r4r"]
+[ext_resource type="Script" path="res://osid_games/swordGame/assets/lightMover.gd" id="22_olo67"]
 
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_4jjk7"]
 polygon = PackedVector2Array(-554, -312, -561, -312, -561, 265, -576, 265, -576, -324, -554, -324)
@@ -84,7 +85,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
-"speed": 5.0
+"speed": 3.0
 }]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_oqhbf"]
@@ -119,11 +120,14 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
-"speed": 5.0
+"speed": 3.0
 }]
 
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_s3aar"]
+polygon = PackedVector2Array(313, -159, 313, 159, 296, 174, 293, -172)
+
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_776ys"]
-polygon = PackedVector2Array(316, -173, 312, 175, 291, 175, 296, -173)
+polygon = PackedVector2Array(316, -170, 313, 174, 295, 159, 296, -159)
 
 [sub_resource type="Gradient" id="Gradient_nyhov"]
 colors = PackedColorArray(0.687851, 0.647859, 0.991436, 1, 0, 0, 0, 1)
@@ -137,7 +141,7 @@ fill_from = Vector2(0.5, 0.5)
 fill_to = Vector2(0.9, 0.1)
 metadata/_snap_enabled = true
 
-[node name="Node2D" type="Node2D"]
+[node name="bg" type="Node2D"]
 
 [node name="1" type="Sprite2D" parent="."]
 texture = ExtResource("1_3u8uk")
@@ -222,12 +226,12 @@ frame_progress = 0.694142
 [node name="window" type="Sprite2D" parent="Node2D"]
 texture = ExtResource("21_s8r4r")
 
-[node name="LightOccluder2D" type="LightOccluder2D" parent="Node2D/window"]
+[node name="LightOccluderL" type="LightOccluder2D" parent="Node2D/window"]
 position = Vector2(-608, 0)
-occluder = SubResource("OccluderPolygon2D_776ys")
+occluder = SubResource("OccluderPolygon2D_s3aar")
 occluder_light_mask = 2
 
-[node name="LightOccluder2D2" type="LightOccluder2D" parent="Node2D/window"]
+[node name="LightOccluderR" type="LightOccluder2D" parent="Node2D/window"]
 occluder = SubResource("OccluderPolygon2D_776ys")
 occluder_light_mask = 2
 
@@ -243,6 +247,8 @@ texture = SubResource("GradientTexture2D_xjuaj")
 [node name="PointLight2D" type="PointLight2D" parent="."]
 position = Vector2(0, -1679)
 scale = Vector2(0.805465, 2.40365)
+energy = 0.2
 shadow_enabled = true
 texture = SubResource("GradientTexture2D_xjuaj")
 texture_scale = 6.13
+script = ExtResource("22_olo67")

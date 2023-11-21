@@ -11,7 +11,7 @@ func _process(_delta):
 		hit()
 
 func _on_start_game():
-	await get_tree().create_timer(randf_range(.2*$MicrogameTimer.wait_time,.8*$MicrogameTimer.wait_time)).timeout
+	await get_tree().create_timer(randf_range(.1*$MicrogameTimer.wait_time,.8*$MicrogameTimer.wait_time)).timeout
 	if attack:
 		return
 	go = true
@@ -26,9 +26,9 @@ func _on_start_game():
 		$enemy.play("sheath")
 		await $enemy.animation_finished
 		lost.emit()
-	elif !attack and !lose:
+	elif attack and !lose:
 		#cross animation
-		print("!attack and !lose")
+		print("attack and !lose")
 		$enemy.position.x -= 500
 		$enemy.play("sheath")
 		await $enemy.animation_finished
