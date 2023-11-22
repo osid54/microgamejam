@@ -1,3 +1,4 @@
+AnimationPlayer
 Bone2D
 Skeleton2D
 Marker2D
@@ -19,7 +20,6 @@ InputLabel
 Timer
 ProgressBar
 Node3D
-AnimationPlayer
 Label
 Control
 Button
