@@ -1,75 +1,4 @@
 ea4bc82a6ad023ab7ee23ee620429895
-<<<<<<< HEAD
-::res://::1700622986
-Microgame.gd::GDScript::-1::1700163448::0::1::::Microgame<>Node<>::
-Microgame.tscn::PackedScene::4999670696839735243::1700600295::0::1::::<><>::res://Microgame.gd<>res://MicrogameOverlay.gd<>res://MicrogameTimer.gd
-MicrogameOverlay.gd::GDScript::-1::1700163448::0::1::::<>CanvasLayer<>::
-MicrogameTimer.gd::GDScript::-1::1700446386::0::1::::<>Timer<>::
-::res://osid_games/::1700535021
-::res://osid_games/leafGame/::1700446670
-::res://osid_games/leafGame/assets/::1700450108
-leaf.gd::GDScript::-1::1700271571::0::1::::<>Node2D<>::
-leaf.tscn::PackedScene::1386500526561119348::1700450108::0::1::::<><>::uid://bv62fgllf4ebd
-selector.gd::GDScript::-1::1700446416::0::1::::<>CharacterBody2D<>::
-selector.tscn::PackedScene::300906812079346739::1700450108::0::1::::<><>::res://osid_games/leafGame/assets/selector.gd<>uid://d0ealhtwntep0
-::res://osid_games/leafGame/main/::1700535547
-goldenLeafGame.gd::GDScript::-1::1700446321::0::1::::<>Microgame<>::
-goldenLeafGame.tscn::PackedScene::6224776503005322955::1700535547::0::1::::<><>::uid://cdh430445qvyh
-::res://osid_games/leafGame/sprites/::1700521327
-failure.png::CompressedTexture2D::1933559151014876778::1700445961::1700446671::1::::<><>::
-leaves1.png::CompressedTexture2D::2320737685379769340::1700271513::1700446671::1::::<><>::
-leaves2.png::CompressedTexture2D::1337451606454812014::1700263929::1700446671::1::::<><>::
-leaves3.png::CompressedTexture2D::3926030730882418445::1700263938::1700446671::1::::<><>::
-leaves4.png::CompressedTexture2D::493172612065576769::1700263942::1700446671::1::::<><>::
-leavesP.png::CompressedTexture2D::6473592319582732264::1700449421::1700449421::1::::<><>::
-particleSquare.png::CompressedTexture2D::9089286360317714764::1700414341::1700446671::1::::<><>::
-selector.png::CompressedTexture2D::8922260694811744271::1700264285::1700446671::1::::<><>::
-success.png::CompressedTexture2D::4587319027459084707::1700445933::1700446671::1::::<><>::
-::res://osid_games/swordGame/::1700521383
-::res://osid_games/swordGame/assets/::1700600295
-bg.tscn::PackedScene::757382575532414673::1700600295::0::1::::<><>::uid://dpu0r0fiy1sjo::::res://osid_games/swordGame/sprites/background/1.png<>uid://ufa6p74qp3fn::::res://osid_games/swordGame/sprites/background/2.png<>uid://bbus5yipiw68::::res://osid_games/swordGame/sprites/background/4.png<>uid://bwucb38jpd2m5::::res://osid_games/swordGame/sprites/background/sky.png<>uid://6ioaopn5a7wr::::res://osid_games/swordGame/sprites/background/moon.png<>uid://bx12pa3lpgnau::::res://osid_games/swordGame/sprites/background/hill1.png<>uid://bv20jpecqtbio::::res://osid_games/swordGame/sprites/background/hill2.png<>uid://dd4xd473jfn84::::res://osid_games/swordGame/sprites/background/tree1.png<>uid://ogtnhek4rxa6::::res://osid_games/swordGame/sprites/background/tree2.png<>uid://brrbcjd4c6k50::::res://osid_games/swordGame/sprites/background/tree3.png<>uid://cprmpvssfbosa::::res://osid_games/swordGame/sprites/background/tree4.png<>uid://dbr1kmy3qlb6b::::res://osid_games/swordGame/sprites/background/leaves (1).png<>uid://03qn3kscd67f::::res://osid_games/swordGame/sprites/background/leaves (2).png<>uid://3yfgmg2hljbu::::res://osid_games/swordGame/sprites/background/leaves (3).png<>uid://dgnsoneyy5via::::res://osid_games/swordGame/sprites/background/leaves (4).png<>uid://ck6jnu40m0vp7::::res://osid_games/swordGame/sprites/background/leaves (5).png<>uid://01xuojvax70c::::res://osid_games/swordGame/sprites/background/leaves (6).png<>uid://by67sc5w0yktx::::res://osid_games/swordGame/sprites/background/leaves (7).png<>uid://8apgg5pxoisa::::res://osid_games/swordGame/sprites/background/leaves (8).png<>uid://1top4cyqxhx::::res://osid_games/swordGame/sprites/background/leaves (9).png<>uid://cct4g8lxre6lu::::res://osid_games/swordGame/sprites/background/3.png<>res://osid_games/swordGame/assets/lightMover.gd
-enemy.tscn::PackedScene::737773312162790255::1700600295::0::1::::<><>::uid://bhc3ki50af4ex::::res://osid_games/swordGame/sprites/swords1.png
-lightMover.gd::GDScript::-1::1700537418::0::1::::<>PointLight2D<>::
-::res://osid_games/swordGame/main/::1700600295
-swordDuelGame.gd::GDScript::-1::1700536585::0::1::::<>Microgame<>::
-swordDuelGame.tscn::PackedScene::8555861274666195926::1700600295::0::1::::<><>::uid://cdh430445qvyh::::res://Microgame.tscn<>res://osid_games/swordGame/main/swordDuelGame.gd<>uid://k148lkh024xh::::res://osid_games/swordGame/assets/bg.tscn<>uid://krnavtp0xe1d::::res://osid_games/swordGame/assets/enemy.tscn
-::res://osid_games/swordGame/sprites/::1700535016
-swords1.png::CompressedTexture2D::2883589746071006683::1700521553::1700521747::1::::<><>::
-::res://osid_games/swordGame/sprites/background/::1700535018
-1.png::CompressedTexture2D::8254931865250903448::1700535016::1700535018::1::::<><>::
-2.png::CompressedTexture2D::1414154959765622591::1700535016::1700535018::1::::<><>::
-3.png::CompressedTexture2D::4954215490874388694::1700535017::1700535018::1::::<><>::
-4.png::CompressedTexture2D::73501318697389255::1700535017::1700535018::1::::<><>::
-hill1.png::CompressedTexture2D::4056104098461277256::1700535017::1700535018::1::::<><>::
-hill2.png::CompressedTexture2D::3917659390558171002::1700535017::1700535018::1::::<><>::
-leaves (1).png::CompressedTexture2D::7266142484936844283::1700535017::1700535018::1::::<><>::
-leaves (2).png::CompressedTexture2D::1813519842192023737::1700535017::1700535018::1::::<><>::
-leaves (3).png::CompressedTexture2D::2015147628475184898::1700535017::1700535018::1::::<><>::
-leaves (4).png::CompressedTexture2D::7608350620801234900::1700535017::1700535018::1::::<><>::
-leaves (5).png::CompressedTexture2D::5539296278817300826::1700535017::1700535018::1::::<><>::
-leaves (6).png::CompressedTexture2D::1809827869453317868::1700535017::1700535018::1::::<><>::
-leaves (7).png::CompressedTexture2D::4136923881865322325::1700535017::1700535018::1::::<><>::
-leaves (8).png::CompressedTexture2D::2317153671907055556::1700535017::1700535018::1::::<><>::
-leaves (9).png::CompressedTexture2D::54853278355964385::1700535017::1700535018::1::::<><>::
-moon.png::CompressedTexture2D::2193219971839969213::1700535017::1700535018::1::::<><>::
-sky.png::CompressedTexture2D::3971987540651910026::1700535017::1700535018::1::::<><>::
-tree1.png::CompressedTexture2D::7431098958971804267::1700535017::1700535018::1::::<><>::
-tree2.png::CompressedTexture2D::996207289976609939::1700535018::1700535018::1::::<><>::
-tree3.png::CompressedTexture2D::3614790214605339573::1700535018::1700535018::1::::<><>::
-tree4.png::CompressedTexture2D::5861524966218882996::1700535018::1700535018::1::::<><>::
-::res://singletons/::1700163450
-GlobalData.gd::GDScript::-1::1700163450::0::1::::<>Node<>::
-InputHelper.gd::GDScript::-1::1700163450::0::1::::<>Node<>::
-Saver.gd::GDScript::-1::1700163450::0::1::::<>Node<>::
-::res://ui/::1700446712
-InputLabel.gd::GDScript::-1::1700163450::0::1::::InputLabel<>Label<>::
-InputLabel.tscn::PackedScene::5382668532263379817::1700446712::0::1::::<><>::res://ui/InputLabel.gd
-::res://unused/::1700521341
-fish.png::CompressedTexture2D::5191853155117326380::1700271342::1700521341::1::::<><>::
-mine.png::CompressedTexture2D::6584010717390842365::1700271342::1700521341::1::::<><>::
-rod.png::CompressedTexture2D::7369355381339587756::1700271342::1700521341::1::::<><>::
-rodShadow.png::CompressedTexture2D::7055341475532185251::1700271342::1700521341::1::::<><>::
-=======
 ::res://::1700612740
 Microgame.gd::GDScript::-1::1700255816::0::1::::Microgame<>Node<>::
 Microgame.tscn::PackedScene::4999670696839735243::1700258708::0::1::::<><>::res://Microgame.gd<>res://MicrogameOverlay.gd<>res://MicrogameTimer.gd
@@ -162,4 +91,3 @@ fish.png::CompressedTexture2D::5191853155117326380::1700609960::1700609960::1:::
 mine.png::CompressedTexture2D::6584010717390842365::1700609960::1700609960::1::::<><>::
 rod.png::CompressedTexture2D::7369355381339587756::1700609960::1700609960::1::::<><>::
 rodShadow.png::CompressedTexture2D::7055341475532185251::1700609960::1700609960::1::::<><>::
->>>>>>> 29180b3c3f68d48c1b2ab00f62eac1a61ed4cc8e
