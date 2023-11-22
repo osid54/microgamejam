@@ -1,15 +1,17 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1700610312
+::res://::1700611533
 Microgame.gd::GDScript::-1::1700255816::0::1::::Microgame<>Node<>::
 Microgame.tscn::PackedScene::4999670696839735243::1700258708::0::1::::<><>::res://Microgame.gd<>res://MicrogameOverlay.gd<>res://MicrogameTimer.gd
 MicrogameOverlay.gd::GDScript::-1::1700256822::0::1::::<>CanvasLayer<>::
 MicrogameTimer.gd::GDScript::-1::1700609959::0::1::::<>Timer<>::
-::res://body/::1700610312
+::res://body/::1700611533
+rig.tscn::PackedScene::2087573194898243549::1700610591::0::1::::<><>::
 _body.png::CompressedTexture2D::4894010465289059796::1700610282::1700610312::1::::<><>::
-::res://body/parts/::1700610312
+::res://body/parts/::1700611533
 belly.png::CompressedTexture2D::3424562634527415681::1700610282::1700610306::1::::<><>::
 chest.png::CompressedTexture2D::3843077662404360359::1700610282::1700610306::1::::<><>::
 Head.png::CompressedTexture2D::7738177045045343893::1700610283::1700610306::1::::<><>::
+Hips.png::CompressedTexture2D::1323853640022386173::1700611525::1700611534::1::::<><>::
 LBicep.png::CompressedTexture2D::6231054076954288986::1700610283::1700610306::1::::<><>::
 LCalf.png::CompressedTexture2D::2758937846712396284::1700610283::1700610306::1::::<><>::
 LFoot.png::CompressedTexture2D::3201292785021498227::1700610283::1700610306::1::::<><>::
@@ -47,12 +49,12 @@ selector.png::CompressedTexture2D::8922260694811744271::1700609959::1700609959::
 success.png::CompressedTexture2D::4587319027459084707::1700609959::1700609959::1::::<><>::
 ::res://osid_games/swordGame/::1700609959
 ::res://osid_games/swordGame/assets/::1700609959
-bg.tscn::PackedScene::757382575532414673::1700609959::0::1::::<><>::uid://dpu0r0fiy1sjo::::res://osid_games/swordGame/sprites/background/1.png<>uid://ufa6p74qp3fn::::res://osid_games/swordGame/sprites/background/2.png<>uid://bbus5yipiw68::::res://osid_games/swordGame/sprites/background/4.png<>uid://bwucb38jpd2m5::::res://osid_games/swordGame/sprites/background/sky.png<>uid://6ioaopn5a7wr::::res://osid_games/swordGame/sprites/background/moon.png<>uid://bx12pa3lpgnau::::res://osid_games/swordGame/sprites/background/hill1.png<>uid://bv20jpecqtbio::::res://osid_games/swordGame/sprites/background/hill2.png<>uid://dd4xd473jfn84::::res://osid_games/swordGame/sprites/background/tree1.png<>uid://ogtnhek4rxa6::::res://osid_games/swordGame/sprites/background/tree2.png<>uid://brrbcjd4c6k50::::res://osid_games/swordGame/sprites/background/tree3.png<>uid://cprmpvssfbosa::::res://osid_games/swordGame/sprites/background/tree4.png<>uid://dbr1kmy3qlb6b::::res://osid_games/swordGame/sprites/background/leaves (1).png<>uid://03qn3kscd67f::::res://osid_games/swordGame/sprites/background/leaves (2).png<>uid://3yfgmg2hljbu::::res://osid_games/swordGame/sprites/background/leaves (3).png<>uid://dgnsoneyy5via::::res://osid_games/swordGame/sprites/background/leaves (4).png<>uid://ck6jnu40m0vp7::::res://osid_games/swordGame/sprites/background/leaves (5).png<>uid://01xuojvax70c::::res://osid_games/swordGame/sprites/background/leaves (6).png<>uid://by67sc5w0yktx::::res://osid_games/swordGame/sprites/background/leaves (7).png<>uid://8apgg5pxoisa::::res://osid_games/swordGame/sprites/background/leaves (8).png<>uid://1top4cyqxhx::::res://osid_games/swordGame/sprites/background/leaves (9).png<>uid://cct4g8lxre6lu::::res://osid_games/swordGame/sprites/background/3.png<>res://osid_games/swordGame/assets/lightMover.gd
-enemy.tscn::PackedScene::737773312162790255::1700609959::0::1::::<><>::uid://bhc3ki50af4ex::::res://osid_games/swordGame/sprites/swords1.png
+bg.tscn::PackedScene::757382575532414673::1700609959::0::1::::<><>::uid://dpu0r0fiy1sjo
+enemy.tscn::PackedScene::737773312162790255::1700609959::0::1::::<><>::uid://bhc3ki50af4ex
 lightMover.gd::GDScript::-1::1700609959::0::1::::<>PointLight2D<>::
 ::res://osid_games/swordGame/main/::1700609959
 swordDuelGame.gd::GDScript::-1::1700609959::0::1::::<>Microgame<>::
-swordDuelGame.tscn::PackedScene::8555861274666195926::1700609959::0::1::::<><>::uid://cdh430445qvyh::::res://Microgame.tscn<>res://osid_games/swordGame/main/swordDuelGame.gd<>uid://k148lkh024xh::::res://osid_games/swordGame/assets/bg.tscn<>uid://krnavtp0xe1d::::res://osid_games/swordGame/assets/enemy.tscn
+swordDuelGame.tscn::PackedScene::8555861274666195926::1700609959::0::1::::<><>::uid://cdh430445qvyh
 ::res://osid_games/swordGame/sprites/::1700609960
 swords1.png::CompressedTexture2D::2883589746071006683::1700609960::1700609960::1::::<><>::
 ::res://osid_games/swordGame/sprites/background/::1700609960
