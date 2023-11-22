@@ -22,6 +22,10 @@
 
 [node name="rig" type="Node2D"]
 
+[node name="Sword" type="Sprite2D" parent="."]
+position = Vector2(80, 55)
+texture = ExtResource("19_bdjw0")
+
 [node name="Hips" type="Sprite2D" parent="."]
 position = Vector2(79, 55)
 texture = ExtResource("1_6ugt6")
@@ -52,6 +56,19 @@ position = Vector2(23, 14)
 texture = ExtResource("6_dw2xu")
 offset = Vector2(-52, 1)
 
+[node name="end" type="Marker2D" parent="Hips/Belly/Chest/LBicep/LForearm/LHand"]
+position = Vector2(16, 19)
+
+[node name="Neck" type="Sprite2D" parent="Hips/Belly/Chest"]
+position = Vector2(-1, -6)
+texture = ExtResource("10_kgwe6")
+offset = Vector2(2, 34)
+
+[node name="Head" type="Sprite2D" parent="Hips/Belly/Chest/Neck"]
+position = Vector2(-4, -11)
+texture = ExtResource("11_t50ms")
+offset = Vector2(3, 43)
+
 [node name="RBicep" type="Sprite2D" parent="Hips/Belly/Chest"]
 position = Vector2(-19, 4)
 texture = ExtResource("7_687da")
@@ -67,15 +84,8 @@ position = Vector2(-24, 14)
 texture = ExtResource("9_ex7k5")
 offset = Vector2(52, 3)
 
-[node name="Neck" type="Sprite2D" parent="Hips/Belly/Chest"]
-position = Vector2(-1, -6)
-texture = ExtResource("10_kgwe6")
-offset = Vector2(2, 34)
-
-[node name="Head" type="Sprite2D" parent="Hips/Belly/Chest/Neck"]
-position = Vector2(-4, -11)
-texture = ExtResource("11_t50ms")
-offset = Vector2(3, 43)
+[node name="end" type="Marker2D" parent="Hips/Belly/Chest/RBicep/RForearm/RHand"]
+position = Vector2(-14, 21)
 
 [node name="RThigh" type="Sprite2D" parent="Hips"]
 position = Vector2(-14, 6)
@@ -92,6 +102,9 @@ position = Vector2(-2, 33)
 texture = ExtResource("14_k5nvn")
 offset = Vector2(12, -54)
 
+[node name="end" type="Marker2D" parent="Hips/RThigh/RCalf/RFoot"]
+position = Vector2(-8, 10)
+
 [node name="LThigh" type="Sprite2D" parent="Hips"]
 position = Vector2(10, 8)
 texture = ExtResource("15_lghwj")
@@ -107,11 +120,10 @@ position = Vector2(3, 36)
 texture = ExtResource("17_7vclo")
 offset = Vector2(-15, -59)
 
+[node name="end" type="Marker2D" parent="Hips/LThigh/LCalf/LFoot"]
+position = Vector2(-8, 10)
+
 [node name="Sheath" type="Sprite2D" parent="Hips"]
 position = Vector2(12, -2)
 texture = ExtResource("18_e3rfs")
 offset = Vector2(-11, 2)
-
-[node name="Sword" type="Sprite2D" parent="."]
-position = Vector2(80, 55)
-texture = ExtResource("19_bdjw0")

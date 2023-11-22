@@ -1,13 +1,13 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1700611533
+::res://::1700612740
 Microgame.gd::GDScript::-1::1700255816::0::1::::Microgame<>Node<>::
 Microgame.tscn::PackedScene::4999670696839735243::1700258708::0::1::::<><>::res://Microgame.gd<>res://MicrogameOverlay.gd<>res://MicrogameTimer.gd
 MicrogameOverlay.gd::GDScript::-1::1700256822::0::1::::<>CanvasLayer<>::
 MicrogameTimer.gd::GDScript::-1::1700609959::0::1::::<>Timer<>::
-::res://body/::1700611533
-rig.tscn::PackedScene::2087573194898243549::1700610591::0::1::::<><>::
+::res://body/::1700612518
+rig.tscn::PackedScene::2087573194898243549::1700612518::0::1::::<><>::uid://s4jw8q3hho2h::::res://body/parts/Hips.png<>uid://bo15btqbkcgp2::::res://body/parts/belly.png<>uid://bu0u6sle3k3ol::::res://body/parts/chest.png<>uid://cu1msyefxwatu::::res://body/parts/LBicep.png<>uid://co6tywg8by2jk::::res://body/parts/LForearm.png<>uid://01lomnuesqgs::::res://body/parts/LHand.png<>uid://cd20fs7yqmxb5::::res://body/parts/RBicep.png<>uid://dqtangvlfscbu::::res://body/parts/RForearm.png<>uid://b62cp2ys24q8y::::res://body/parts/RHand.png<>uid://dortdleqfpdki::::res://body/parts/Neck.png<>uid://diiov7bvjj6r6::::res://body/parts/Head.png<>uid://ctgeqo7wi6tmp::::res://body/parts/RThigh.png<>uid://u47sp607sght::::res://body/parts/RCalf.png<>uid://ca2la8xtw4ku0::::res://body/parts/RFoot.png<>uid://b6pgw1s5jbvme::::res://body/parts/LThigh.png<>uid://bfkpkks6hd8ei::::res://body/parts/LCalf.png<>uid://bluy3bcmlf3ql::::res://body/parts/LFoot.png<>uid://cxvfntic7r6p0::::res://body/parts/Sheath.png<>uid://cp44qtd0t7aon::::res://body/parts/Sword.png
 _body.png::CompressedTexture2D::4894010465289059796::1700610282::1700610312::1::::<><>::
-::res://body/parts/::1700611533
+::res://body/parts/::1700611534
 belly.png::CompressedTexture2D::3424562634527415681::1700610282::1700610306::1::::<><>::
 chest.png::CompressedTexture2D::3843077662404360359::1700610282::1700610306::1::::<><>::
 Head.png::CompressedTexture2D::7738177045045343893::1700610283::1700610306::1::::<><>::
