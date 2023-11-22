@@ -1,0 +1,129 @@
+[gd_scene load_steps=20 format=3 uid="uid://40ia4rdt4k5b"]
+
+[ext_resource type="Texture2D" uid="uid://s4jw8q3hho2h" path="res://body/parts/Hips.png" id="1_6ugt6"]
+[ext_resource type="Texture2D" uid="uid://bo15btqbkcgp2" path="res://body/parts/belly.png" id="2_7j0f0"]
+[ext_resource type="Texture2D" uid="uid://bu0u6sle3k3ol" path="res://body/parts/chest.png" id="3_s34gx"]
+[ext_resource type="Texture2D" uid="uid://cu1msyefxwatu" path="res://body/parts/LBicep.png" id="4_5jk7e"]
+[ext_resource type="Texture2D" uid="uid://co6tywg8by2jk" path="res://body/parts/LForearm.png" id="5_vgbke"]
+[ext_resource type="Texture2D" uid="uid://01lomnuesqgs" path="res://body/parts/LHand.png" id="6_dw2xu"]
+[ext_resource type="Texture2D" uid="uid://cd20fs7yqmxb5" path="res://body/parts/RBicep.png" id="7_687da"]
+[ext_resource type="Texture2D" uid="uid://dqtangvlfscbu" path="res://body/parts/RForearm.png" id="8_3ipax"]
+[ext_resource type="Texture2D" uid="uid://b62cp2ys24q8y" path="res://body/parts/RHand.png" id="9_ex7k5"]
+[ext_resource type="Texture2D" uid="uid://dortdleqfpdki" path="res://body/parts/Neck.png" id="10_kgwe6"]
+[ext_resource type="Texture2D" uid="uid://diiov7bvjj6r6" path="res://body/parts/Head.png" id="11_t50ms"]
+[ext_resource type="Texture2D" uid="uid://ctgeqo7wi6tmp" path="res://body/parts/RThigh.png" id="12_0qd6s"]
+[ext_resource type="Texture2D" uid="uid://u47sp607sght" path="res://body/parts/RCalf.png" id="13_3sgv2"]
+[ext_resource type="Texture2D" uid="uid://ca2la8xtw4ku0" path="res://body/parts/RFoot.png" id="14_k5nvn"]
+[ext_resource type="Texture2D" uid="uid://b6pgw1s5jbvme" path="res://body/parts/LThigh.png" id="15_lghwj"]
+[ext_resource type="Texture2D" uid="uid://bfkpkks6hd8ei" path="res://body/parts/LCalf.png" id="16_20hwj"]
+[ext_resource type="Texture2D" uid="uid://bluy3bcmlf3ql" path="res://body/parts/LFoot.png" id="17_7vclo"]
+[ext_resource type="Texture2D" uid="uid://cxvfntic7r6p0" path="res://body/parts/Sheath.png" id="18_e3rfs"]
+[ext_resource type="Texture2D" uid="uid://cp44qtd0t7aon" path="res://body/parts/Sword.png" id="19_bdjw0"]
+
+[node name="rig" type="Node2D"]
+
+[node name="Sword" type="Sprite2D" parent="."]
+position = Vector2(80, 55)
+texture = ExtResource("19_bdjw0")
+
+[node name="Hips" type="Sprite2D" parent="."]
+position = Vector2(79, 55)
+texture = ExtResource("1_6ugt6")
+offset = Vector2(0, -15)
+
+[node name="Belly" type="Sprite2D" parent="Hips"]
+position = Vector2(-2, 0)
+texture = ExtResource("2_7j0f0")
+offset = Vector2(2, -23)
+
+[node name="Chest" type="Sprite2D" parent="Hips/Belly"]
+position = Vector2(-1, -46)
+texture = ExtResource("3_s34gx")
+offset = Vector2(3, 28)
+
+[node name="LBicep" type="Sprite2D" parent="Hips/Belly/Chest"]
+position = Vector2(21, 3)
+texture = ExtResource("4_5jk7e")
+offset = Vector2(-9, 27)
+
+[node name="LForearm" type="Sprite2D" parent="Hips/Belly/Chest/LBicep"]
+position = Vector2(24, 11)
+texture = ExtResource("5_vgbke")
+offset = Vector2(-31, 15)
+
+[node name="LHand" type="Sprite2D" parent="Hips/Belly/Chest/LBicep/LForearm"]
+position = Vector2(23, 14)
+texture = ExtResource("6_dw2xu")
+offset = Vector2(-52, 1)
+
+[node name="end" type="Marker2D" parent="Hips/Belly/Chest/LBicep/LForearm/LHand"]
+position = Vector2(16, 19)
+
+[node name="Neck" type="Sprite2D" parent="Hips/Belly/Chest"]
+position = Vector2(-1, -6)
+texture = ExtResource("10_kgwe6")
+offset = Vector2(2, 34)
+
+[node name="Head" type="Sprite2D" parent="Hips/Belly/Chest/Neck"]
+position = Vector2(-4, -11)
+texture = ExtResource("11_t50ms")
+offset = Vector2(3, 43)
+
+[node name="RBicep" type="Sprite2D" parent="Hips/Belly/Chest"]
+position = Vector2(-19, 4)
+texture = ExtResource("7_687da")
+offset = Vector2(9, 31)
+
+[node name="RForearm" type="Sprite2D" parent="Hips/Belly/Chest/RBicep"]
+position = Vector2(-24, 15)
+texture = ExtResource("8_3ipax")
+offset = Vector2(31, 16)
+
+[node name="RHand" type="Sprite2D" parent="Hips/Belly/Chest/RBicep/RForearm"]
+position = Vector2(-24, 14)
+texture = ExtResource("9_ex7k5")
+offset = Vector2(52, 3)
+
+[node name="end" type="Marker2D" parent="Hips/Belly/Chest/RBicep/RForearm/RHand"]
+position = Vector2(-14, 21)
+
+[node name="RThigh" type="Sprite2D" parent="Hips"]
+position = Vector2(-14, 6)
+texture = ExtResource("12_0qd6s")
+offset = Vector2(8, 8)
+
+[node name="RCalf" type="Sprite2D" parent="Hips/RThigh"]
+position = Vector2(-4, 32)
+texture = ExtResource("13_3sgv2")
+offset = Vector2(11, -24)
+
+[node name="RFoot" type="Sprite2D" parent="Hips/RThigh/RCalf"]
+position = Vector2(-2, 33)
+texture = ExtResource("14_k5nvn")
+offset = Vector2(12, -54)
+
+[node name="end" type="Marker2D" parent="Hips/RThigh/RCalf/RFoot"]
+position = Vector2(-8, 10)
+
+[node name="LThigh" type="Sprite2D" parent="Hips"]
+position = Vector2(10, 8)
+texture = ExtResource("15_lghwj")
+offset = Vector2(-8, 9)
+
+[node name="LCalf" type="Sprite2D" parent="Hips/LThigh"]
+position = Vector2(3, 30)
+texture = ExtResource("16_20hwj")
+offset = Vector2(-11, -23)
+
+[node name="LFoot" type="Sprite2D" parent="Hips/LThigh/LCalf"]
+position = Vector2(3, 36)
+texture = ExtResource("17_7vclo")
+offset = Vector2(-15, -59)
+
+[node name="end" type="Marker2D" parent="Hips/LThigh/LCalf/LFoot"]
+position = Vector2(-8, 10)
+
+[node name="Sheath" type="Sprite2D" parent="Hips"]
+position = Vector2(12, -2)
+texture = ExtResource("18_e3rfs")
+offset = Vector2(-11, 2)
