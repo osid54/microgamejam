@@ -22,108 +22,198 @@
 
 [node name="rig" type="Node2D"]
 
+[node name="Skeleton2D" type="Skeleton2D" parent="."]
+
+[node name="HipsBone2D" type="Bone2D" parent="Skeleton2D"]
+position = Vector2(79, 55)
+rest = Transform2D(1, 0, 0, 1, 79, 55)
+
+[node name="Hips" type="Sprite2D" parent="Skeleton2D/HipsBone2D"]
+texture = ExtResource("1_6ugt6")
+offset = Vector2(0, -15)
+metadata/_edit_lock_ = true
+
+[node name="BellyBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D"]
+position = Vector2(-2, 0)
+rest = Transform2D(1, 0, 0, 1, -2, 0)
+
+[node name="Belly" type="Sprite2D" parent="Skeleton2D/HipsBone2D/BellyBone2D"]
+texture = ExtResource("2_7j0f0")
+offset = Vector2(2, -23)
+metadata/_edit_lock_ = true
+
+[node name="ChestBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D/BellyBone2D"]
+position = Vector2(-1, -46)
+rest = Transform2D(1, 0, 0, 1, -1, -46)
+
+[node name="Chest" type="Sprite2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D"]
+texture = ExtResource("3_s34gx")
+offset = Vector2(3, 28)
+metadata/_edit_lock_ = true
+
+[node name="NeckBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D"]
+position = Vector2(-1, -6)
+rest = Transform2D(1, 0, 0, 1, -1, -6)
+
+[node name="Neck" type="Sprite2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/NeckBone2D"]
+texture = ExtResource("10_kgwe6")
+offset = Vector2(2, 34)
+metadata/_edit_lock_ = true
+
+[node name="HeadBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/NeckBone2D"]
+position = Vector2(-4, -11)
+rest = Transform2D(1, 0, 0, 1, -4, -11)
+
+[node name="Head" type="Sprite2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/NeckBone2D/HeadBone2D"]
+texture = ExtResource("11_t50ms")
+offset = Vector2(3, 43)
+metadata/_edit_lock_ = true
+
+[node name="RBicepBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D"]
+position = Vector2(-19, 4)
+rest = Transform2D(1, 0, 0, 1, -19, 4)
+
+[node name="RBicep" type="Sprite2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/RBicepBone2D"]
+texture = ExtResource("7_687da")
+offset = Vector2(9, 31)
+metadata/_edit_lock_ = true
+
+[node name="RForearmBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/RBicepBone2D"]
+position = Vector2(-24, 15)
+rest = Transform2D(1, 0, 0, 1, -24, 15)
+
+[node name="RForearm" type="Sprite2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/RBicepBone2D/RForearmBone2D"]
+texture = ExtResource("8_3ipax")
+offset = Vector2(31, 16)
+metadata/_edit_lock_ = true
+
+[node name="RHandBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/RBicepBone2D/RForearmBone2D"]
+position = Vector2(-24, 14)
+rest = Transform2D(1, 0, 0, 1, -24, 14)
+
+[node name="RHand" type="Sprite2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/RBicepBone2D/RForearmBone2D/RHandBone2D"]
+texture = ExtResource("9_ex7k5")
+offset = Vector2(52, 3)
+metadata/_edit_lock_ = true
+
+[node name="endBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/RBicepBone2D/RForearmBone2D/RHandBone2D"]
+position = Vector2(-14, 21)
+rest = Transform2D(1, 0, 0, 1, -14, 21)
+
+[node name="end" type="Marker2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/RBicepBone2D/RForearmBone2D/RHandBone2D/endBone2D"]
+metadata/_edit_lock_ = true
+
+[node name="LBicepBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D"]
+position = Vector2(21, 3)
+rest = Transform2D(1, 0, 0, 1, 21, 3)
+
+[node name="LBicep" type="Sprite2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/LBicepBone2D"]
+texture = ExtResource("4_5jk7e")
+offset = Vector2(-9, 27)
+metadata/_edit_lock_ = true
+
+[node name="LForearmBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/LBicepBone2D"]
+position = Vector2(24, 11)
+rest = Transform2D(1, 0, 0, 1, 24, 11)
+
+[node name="LForearm" type="Sprite2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/LBicepBone2D/LForearmBone2D"]
+texture = ExtResource("5_vgbke")
+offset = Vector2(-31, 15)
+metadata/_edit_lock_ = true
+
+[node name="LHandBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/LBicepBone2D/LForearmBone2D"]
+position = Vector2(23, 14)
+rest = Transform2D(1, 0, 0, 1, 23, 14)
+
+[node name="LHand" type="Sprite2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/LBicepBone2D/LForearmBone2D/LHandBone2D"]
+texture = ExtResource("6_dw2xu")
+offset = Vector2(-52, 1)
+metadata/_edit_lock_ = true
+
+[node name="endBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/LBicepBone2D/LForearmBone2D/LHandBone2D"]
+position = Vector2(16, 19)
+rest = Transform2D(1, 0, 0, 1, 16, 19)
+
+[node name="end" type="Marker2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/LBicepBone2D/LForearmBone2D/LHandBone2D/endBone2D"]
+metadata/_edit_lock_ = true
+
+[node name="RThighBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D"]
+position = Vector2(-14, 6)
+rest = Transform2D(1, 0, 0, 1, -14, 6)
+
+[node name="RThigh" type="Sprite2D" parent="Skeleton2D/HipsBone2D/RThighBone2D"]
+texture = ExtResource("12_0qd6s")
+offset = Vector2(8, 8)
+metadata/_edit_lock_ = true
+
+[node name="RCalfBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D/RThighBone2D"]
+position = Vector2(-4, 32)
+rest = Transform2D(1, 0, 0, 1, -4, 32)
+
+[node name="RCalf" type="Sprite2D" parent="Skeleton2D/HipsBone2D/RThighBone2D/RCalfBone2D"]
+texture = ExtResource("13_3sgv2")
+offset = Vector2(11, -24)
+metadata/_edit_lock_ = true
+
+[node name="RFootBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D/RThighBone2D/RCalfBone2D"]
+position = Vector2(-2, 33)
+rest = Transform2D(1, 0, 0, 1, -2, 33)
+
+[node name="RFoot" type="Sprite2D" parent="Skeleton2D/HipsBone2D/RThighBone2D/RCalfBone2D/RFootBone2D"]
+texture = ExtResource("14_k5nvn")
+offset = Vector2(12, -54)
+metadata/_edit_lock_ = true
+
+[node name="endBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D/RThighBone2D/RCalfBone2D/RFootBone2D"]
+position = Vector2(-8, 10)
+rest = Transform2D(1, 0, 0, 1, -8, 10)
+
+[node name="end" type="Marker2D" parent="Skeleton2D/HipsBone2D/RThighBone2D/RCalfBone2D/RFootBone2D/endBone2D"]
+metadata/_edit_lock_ = true
+
+[node name="LThighBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D"]
+position = Vector2(10, 8)
+rest = Transform2D(1, 0, 0, 1, 10, 8)
+
+[node name="LThigh" type="Sprite2D" parent="Skeleton2D/HipsBone2D/LThighBone2D"]
+texture = ExtResource("15_lghwj")
+offset = Vector2(-8, 9)
+metadata/_edit_lock_ = true
+
+[node name="LCalfBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D/LThighBone2D"]
+position = Vector2(3, 30)
+rest = Transform2D(1, 0, 0, 1, 3, 30)
+
+[node name="LCalf" type="Sprite2D" parent="Skeleton2D/HipsBone2D/LThighBone2D/LCalfBone2D"]
+texture = ExtResource("16_20hwj")
+offset = Vector2(-11, -23)
+metadata/_edit_lock_ = true
+
+[node name="LFootBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D/LThighBone2D/LCalfBone2D"]
+position = Vector2(3, 36)
+rest = Transform2D(1, 0, 0, 1, 3, 36)
+
+[node name="LFoot" type="Sprite2D" parent="Skeleton2D/HipsBone2D/LThighBone2D/LCalfBone2D/LFootBone2D"]
+texture = ExtResource("17_7vclo")
+offset = Vector2(-15, -59)
+metadata/_edit_lock_ = true
+
+[node name="endBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D/LThighBone2D/LCalfBone2D/LFootBone2D"]
+position = Vector2(-8, 10)
+rest = Transform2D(1, 0, 0, 1, -8, 10)
+
+[node name="end" type="Marker2D" parent="Skeleton2D/HipsBone2D/LThighBone2D/LCalfBone2D/LFootBone2D/endBone2D"]
+metadata/_edit_lock_ = true
+
+[node name="SheathBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D"]
+position = Vector2(12, -2)
+rest = Transform2D(1, 0, 0, 1, 12, -2)
+
+[node name="Sheath" type="Sprite2D" parent="Skeleton2D/HipsBone2D/SheathBone2D"]
+texture = ExtResource("18_e3rfs")
+offset = Vector2(-11, 2)
+metadata/_edit_lock_ = true
+
 [node name="Sword" type="Sprite2D" parent="."]
 position = Vector2(80, 55)
 texture = ExtResource("19_bdjw0")
-
-[node name="Hips" type="Sprite2D" parent="."]
-position = Vector2(79, 55)
-texture = ExtResource("1_6ugt6")
-offset = Vector2(0, -15)
-
-[node name="Belly" type="Sprite2D" parent="Hips"]
-position = Vector2(-2, 0)
-texture = ExtResource("2_7j0f0")
-offset = Vector2(2, -23)
-
-[node name="Chest" type="Sprite2D" parent="Hips/Belly"]
-position = Vector2(-1, -46)
-texture = ExtResource("3_s34gx")
-offset = Vector2(3, 28)
-
-[node name="LBicep" type="Sprite2D" parent="Hips/Belly/Chest"]
-position = Vector2(21, 3)
-texture = ExtResource("4_5jk7e")
-offset = Vector2(-9, 27)
-
-[node name="LForearm" type="Sprite2D" parent="Hips/Belly/Chest/LBicep"]
-position = Vector2(24, 11)
-texture = ExtResource("5_vgbke")
-offset = Vector2(-31, 15)
-
-[node name="LHand" type="Sprite2D" parent="Hips/Belly/Chest/LBicep/LForearm"]
-position = Vector2(23, 14)
-texture = ExtResource("6_dw2xu")
-offset = Vector2(-52, 1)
-
-[node name="end" type="Marker2D" parent="Hips/Belly/Chest/LBicep/LForearm/LHand"]
-position = Vector2(16, 19)
-
-[node name="Neck" type="Sprite2D" parent="Hips/Belly/Chest"]
-position = Vector2(-1, -6)
-texture = ExtResource("10_kgwe6")
-offset = Vector2(2, 34)
-
-[node name="Head" type="Sprite2D" parent="Hips/Belly/Chest/Neck"]
-position = Vector2(-4, -11)
-texture = ExtResource("11_t50ms")
-offset = Vector2(3, 43)
-
-[node name="RBicep" type="Sprite2D" parent="Hips/Belly/Chest"]
-position = Vector2(-19, 4)
-texture = ExtResource("7_687da")
-offset = Vector2(9, 31)
-
-[node name="RForearm" type="Sprite2D" parent="Hips/Belly/Chest/RBicep"]
-position = Vector2(-24, 15)
-texture = ExtResource("8_3ipax")
-offset = Vector2(31, 16)
-
-[node name="RHand" type="Sprite2D" parent="Hips/Belly/Chest/RBicep/RForearm"]
-position = Vector2(-24, 14)
-texture = ExtResource("9_ex7k5")
-offset = Vector2(52, 3)
-
-[node name="end" type="Marker2D" parent="Hips/Belly/Chest/RBicep/RForearm/RHand"]
-position = Vector2(-14, 21)
-
-[node name="RThigh" type="Sprite2D" parent="Hips"]
-position = Vector2(-14, 6)
-texture = ExtResource("12_0qd6s")
-offset = Vector2(8, 8)
-
-[node name="RCalf" type="Sprite2D" parent="Hips/RThigh"]
-position = Vector2(-4, 32)
-texture = ExtResource("13_3sgv2")
-offset = Vector2(11, -24)
-
-[node name="RFoot" type="Sprite2D" parent="Hips/RThigh/RCalf"]
-position = Vector2(-2, 33)
-texture = ExtResource("14_k5nvn")
-offset = Vector2(12, -54)
-
-[node name="end" type="Marker2D" parent="Hips/RThigh/RCalf/RFoot"]
-position = Vector2(-8, 10)
-
-[node name="LThigh" type="Sprite2D" parent="Hips"]
-position = Vector2(10, 8)
-texture = ExtResource("15_lghwj")
-offset = Vector2(-8, 9)
-
-[node name="LCalf" type="Sprite2D" parent="Hips/LThigh"]
-position = Vector2(3, 30)
-texture = ExtResource("16_20hwj")
-offset = Vector2(-11, -23)
-
-[node name="LFoot" type="Sprite2D" parent="Hips/LThigh/LCalf"]
-position = Vector2(3, 36)
-texture = ExtResource("17_7vclo")
-offset = Vector2(-15, -59)
-
-[node name="end" type="Marker2D" parent="Hips/LThigh/LCalf/LFoot"]
-position = Vector2(-8, 10)
-
-[node name="Sheath" type="Sprite2D" parent="Hips"]
-position = Vector2(12, -2)
-texture = ExtResource("18_e3rfs")
-offset = Vector2(-11, 2)
