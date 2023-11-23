@@ -2,21 +2,28 @@
 
 [ext_resource type="PackedScene" uid="uid://cdh430445qvyh" path="res://Microgame.tscn" id="1_1q5ca"]
 [ext_resource type="Script" path="res://osid_games/swordGame/main/swordDuelGame.gd" id="2_jsng8"]
-[ext_resource type="PackedScene" uid="uid://k148lkh024xh" path="res://osid_games/swordGame/assets/bg.tscn" id="3_gchbb"]
 [ext_resource type="PackedScene" uid="uid://krnavtp0xe1d" path="res://osid_games/swordGame/assets/enemy.tscn" id="3_luvxd"]
+[ext_resource type="Texture2D" uid="uid://bca2y68yl72ql" path="res://osid_games/swordGame/sprites/bg.png" id="3_yx5tt"]
 [ext_resource type="PackedScene" uid="uid://dea5m4ympg6b2" path="res://osid_games/swordGame/assets/player.tscn" id="5_35ato"]
 
 [node name="swordDuelGame" instance=ExtResource("1_1q5ca")]
 script = ExtResource("2_jsng8")
 
-[node name="bg" parent="." index="0" instance=ExtResource("3_gchbb")]
-position = Vector2(576, 324)
+[node name="CanvasLayer" type="CanvasLayer" parent="." index="0"]
+layer = -5
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" index="0"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("3_yx5tt")
+metadata/_edit_use_anchors_ = true
 
 [node name="enemy" parent="." index="1" instance=ExtResource("3_luvxd")]
-position = Vector2(869, 479)
+modulate = Color(0, 0, 1, 1)
+position = Vector2(851, 487)
 
 [node name="player" parent="." index="2" instance=ExtResource("5_35ato")]
-modulate = Color(0.917647, 0.458824, 1, 1)
+modulate = Color(1, 0, 0, 1)
 position = Vector2(307, 480)
 
 [node name="MicrogameTimer" parent="." index="3"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://40ia4rdt4k5b"]
+[gd_scene load_steps=29 format=3 uid="uid://40ia4rdt4k5b"]
 
 [ext_resource type="Texture2D" uid="uid://s4jw8q3hho2h" path="res://osid_games/swordGame/body/parts/Hips.png" id="1_6ugt6"]
 [ext_resource type="Texture2D" uid="uid://bo15btqbkcgp2" path="res://osid_games/swordGame/body/parts/belly.png" id="2_7j0f0"]
@@ -801,6 +801,263 @@ tracks/19/keys = {
 "values": [-1.11807, -1.07305, -0.897836, -0.564144, -0.0680349]
 }
 
+[sub_resource type="Animation" id="Animation_0s0rh"]
+resource_name = "sheathBig"
+length = 0.25
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Skeleton2D/HipsBone2D/SheathBone2D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-0.387223, -0.772169]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Skeleton2D/HipsBone2D/LThighBone2D/LCalfBone2D/LFootBone2D:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.396625, 0.123105]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Skeleton2D/HipsBone2D/LThighBone2D/LCalfBone2D:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-0.749441, -0.227324]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Skeleton2D/HipsBone2D/LThighBone2D:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.175449, 0.00924684]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Skeleton2D/HipsBone2D/RThighBone2D/RCalfBone2D/RFootBone2D:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.623903, 0.14415]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Skeleton2D/HipsBone2D/RThighBone2D/RCalfBone2D:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-0.579215, -0.21461]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Skeleton2D/HipsBone2D/RThighBone2D:rotation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.179294, 0.087779]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/LBicepBone2D/LForearmBone2D/LHandBone2D:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-1.27805, -0.217405]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/LBicepBone2D/LForearmBone2D:rotation")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [2.20267, 1.66814]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/LBicepBone2D:rotation")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-0.231124, 0.147689]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/RBicepBone2D/RForearmBone2D/RHandBone2D:rotation")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-0.563988, -0.12669]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/RBicepBone2D/RForearmBone2D:rotation")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0602973, -1.47165]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/RBicepBone2D:rotation")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.338827, -0.593334]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/NeckBone2D/HeadBone2D:rotation")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-0.104825, -0.191149]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/NeckBone2D:rotation")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-0.077175, -0.165157]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D:rotation")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.211085, 0.0294898]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("Skeleton2D/HipsBone2D/BellyBone2D:rotation")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.244253, 0.0712425]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("Skeleton2D/HipsBone2D:rotation")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("Skeleton2D/HipsBone2D:position")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(82.2485, 54.5207), Vector2(78.2485, 53.5207)]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("Sword:position")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-65, -53), Vector2(-67, -29), Vector2(-55, -9), Vector2(-33, 5), Vector2(-12, 5), Vector2(10, -6)]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("Sword:rotation")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.25),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [-0.0116212, -0.717497, -0.943787, -1.11965, -0.782872]
+}
+
 [sub_resource type="Animation" id="Animation_6b67d"]
 resource_name = "slice"
 length = 0.25
@@ -1583,8 +1840,8 @@ tracks/21/keys = {
 "values": [Vector2(82.2485, 74.457)]
 }
 
-[sub_resource type="Animation" id="Animation_0s0rh"]
-resource_name = "sheathBig"
+[sub_resource type="Animation" id="Animation_wttkw"]
+resource_name = "death"
 length = 0.25
 step = 0.05
 tracks/0/type = "value"
@@ -1597,7 +1854,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.25),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [-0.387223, -0.772169]
+"values": [-0.387223, 0.552641]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -1609,7 +1866,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0, 0.25),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [0.396625, 0.123105]
+"values": [0.396625, -0.25292]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -1621,7 +1878,7 @@ tracks/2/keys = {
 "times": PackedFloat32Array(0, 0.25),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [-0.749441, -0.227324]
+"values": [-0.749441, -0.224562]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -1633,7 +1890,7 @@ tracks/3/keys = {
 "times": PackedFloat32Array(0, 0.25),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [0.175449, 0.00924684]
+"values": [0.175449, 0.455576]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
@@ -1645,7 +1902,7 @@ tracks/4/keys = {
 "times": PackedFloat32Array(0, 0.25),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [0.623903, 0.14415]
+"values": [0.623903, 0.104381]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
@@ -1657,7 +1914,7 @@ tracks/5/keys = {
 "times": PackedFloat32Array(0, 0.25),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [-0.579215, -0.21461]
+"values": [-0.579215, -0.00995791]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
@@ -1669,7 +1926,7 @@ tracks/6/keys = {
 "times": PackedFloat32Array(0, 0.25),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [0.179294, 0.087779]
+"values": [0.179294, 0.0923984]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
@@ -1681,7 +1938,7 @@ tracks/7/keys = {
 "times": PackedFloat32Array(0, 0.25),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [-1.27805, -0.217405]
+"values": [-1.27805, -0.29748]
 }
 tracks/8/type = "value"
 tracks/8/imported = false
@@ -1693,7 +1950,7 @@ tracks/8/keys = {
 "times": PackedFloat32Array(0, 0.25),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [2.20267, 1.66814]
+"values": [2.20267, 0.140177]
 }
 tracks/9/type = "value"
 tracks/9/imported = false
@@ -1705,7 +1962,7 @@ tracks/9/keys = {
 "times": PackedFloat32Array(0, 0.25),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [-0.231124, 0.147689]
+"values": [-0.231124, 0.801204]
 }
 tracks/10/type = "value"
 tracks/10/imported = false
@@ -1717,7 +1974,7 @@ tracks/10/keys = {
 "times": PackedFloat32Array(0, 0.25),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [-0.563988, -0.12669]
+"values": [-0.563988, 0.0110912]
 }
 tracks/11/type = "value"
 tracks/11/imported = false
@@ -1729,7 +1986,7 @@ tracks/11/keys = {
 "times": PackedFloat32Array(0, 0.25),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [0.0602973, -1.47165]
+"values": [0.0602973, 0.214291]
 }
 tracks/12/type = "value"
 tracks/12/imported = false
@@ -1741,7 +1998,7 @@ tracks/12/keys = {
 "times": PackedFloat32Array(0, 0.25),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [0.338827, -0.593334]
+"values": [0.338827, -1.26222]
 }
 tracks/13/type = "value"
 tracks/13/imported = false
@@ -1753,7 +2010,7 @@ tracks/13/keys = {
 "times": PackedFloat32Array(0, 0.25),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [-0.104825, -0.191149]
+"values": [-0.104825, 0.193673]
 }
 tracks/14/type = "value"
 tracks/14/imported = false
@@ -1765,7 +2022,7 @@ tracks/14/keys = {
 "times": PackedFloat32Array(0, 0.25),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [-0.077175, -0.165157]
+"values": [-0.077175, 0.121702]
 }
 tracks/15/type = "value"
 tracks/15/imported = false
@@ -1774,10 +2031,10 @@ tracks/15/path = NodePath("Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D:rotatio
 tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/keys = {
-"times": PackedFloat32Array(0, 0.25),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [0.211085, 0.0294898]
+"values": [0.211085]
 }
 tracks/16/type = "value"
 tracks/16/imported = false
@@ -1786,10 +2043,10 @@ tracks/16/path = NodePath("Skeleton2D/HipsBone2D/BellyBone2D:rotation")
 tracks/16/interp = 1
 tracks/16/loop_wrap = true
 tracks/16/keys = {
-"times": PackedFloat32Array(0, 0.25),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [0.244253, 0.0712425]
+"values": [0.244253]
 }
 tracks/17/type = "value"
 tracks/17/imported = false
@@ -1798,52 +2055,53 @@ tracks/17/path = NodePath("Skeleton2D/HipsBone2D:rotation")
 tracks/17/interp = 1
 tracks/17/loop_wrap = true
 tracks/17/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [0.0]
+"values": [0.0, 1.32282]
 }
 tracks/18/type = "value"
 tracks/18/imported = false
 tracks/18/enabled = true
-tracks/18/path = NodePath("Skeleton2D/HipsBone2D:position")
+tracks/18/path = NodePath("Sword:position")
 tracks/18/interp = 1
 tracks/18/loop_wrap = true
 tracks/18/keys = {
-"times": PackedFloat32Array(0, 0.25),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 0.15, 0.2, 0.25),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(82.2485, 54.5207), Vector2(78.2485, 53.5207)]
+"values": [Vector2(-65, -53), Vector2(-57, 78), Vector2(-48, 66), Vector2(-37, 74)]
 }
 tracks/19/type = "value"
 tracks/19/imported = false
 tracks/19/enabled = true
-tracks/19/path = NodePath("Sword:position")
+tracks/19/path = NodePath("Sword:rotation")
 tracks/19/interp = 1
 tracks/19/loop_wrap = true
 tracks/19/keys = {
-"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.15),
+"transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(-65, -53), Vector2(-67, -29), Vector2(-55, -9), Vector2(-33, 5), Vector2(-12, 5), Vector2(10, -6)]
+"values": [-0.0116212, -0.992665]
 }
 tracks/20/type = "value"
 tracks/20/imported = false
 tracks/20/enabled = true
-tracks/20/path = NodePath("Sword:rotation")
+tracks/20/path = NodePath("Skeleton2D/HipsBone2D:position")
 tracks/20/interp = 1
 tracks/20/loop_wrap = true
 tracks/20/keys = {
-"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.25),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [-0.0116212, -0.717497, -0.943787, -1.11965, -0.782872]
+"values": [Vector2(82.2485, 54.5207), Vector2(151.249, 111.521)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_qpvj7"]
 _data = {
 "RESET": SubResource("Animation_imp7t"),
 "crouch": SubResource("Animation_hpmlh"),
+"death": SubResource("Animation_wttkw"),
 "sheath": SubResource("Animation_0mvdx"),
 "sheathBig": SubResource("Animation_0s0rh"),
 "slice": SubResource("Animation_6b67d"),
@@ -1864,127 +2122,46 @@ rest = Transform2D(1, 0, 0, 1, 79, 55)
 editor_settings/show_bone_gizmo = false
 
 [node name="Hips" type="Sprite2D" parent="Skeleton2D/HipsBone2D"]
+clip_children = 1
 texture = ExtResource("1_6ugt6")
 offset = Vector2(0, -15)
 metadata/_edit_lock_ = true
 
-[node name="BellyBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D"]
-position = Vector2(-2, 0)
-scale = Vector2(0.999998, 0.999998)
-rest = Transform2D(1, 0, 0, 1, -2, 0)
-editor_settings/show_bone_gizmo = false
-
-[node name="Belly" type="Sprite2D" parent="Skeleton2D/HipsBone2D/BellyBone2D"]
-texture = ExtResource("2_7j0f0")
-offset = Vector2(2, -23)
-metadata/_edit_lock_ = true
-
-[node name="ChestBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D/BellyBone2D"]
-position = Vector2(-1, -46)
-scale = Vector2(0.999995, 0.999995)
-rest = Transform2D(1, 0, 0, 1, -1, -46)
-editor_settings/show_bone_gizmo = false
-
-[node name="Chest" type="Sprite2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D"]
-texture = ExtResource("3_s34gx")
-offset = Vector2(3, 28)
-metadata/_edit_lock_ = true
-
-[node name="NeckBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D"]
-position = Vector2(-1, -6)
-scale = Vector2(0.999998, 0.999998)
-rest = Transform2D(1, 0, 0, 1, -1, -6)
-editor_settings/show_bone_gizmo = false
-
-[node name="Neck" type="Sprite2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/NeckBone2D"]
-texture = ExtResource("10_kgwe6")
-offset = Vector2(2, 34)
-metadata/_edit_lock_ = true
-
-[node name="HeadBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/NeckBone2D"]
-position = Vector2(-4, -11)
-scale = Vector2(1, 1)
-rest = Transform2D(1, 0, 0, 1, -4, -11)
-editor_settings/show_bone_gizmo = false
-
-[node name="Head" type="Sprite2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/NeckBone2D/HeadBone2D"]
-texture = ExtResource("11_t50ms")
-offset = Vector2(3, 43)
-metadata/_edit_lock_ = true
-
-[node name="RBicepBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D"]
-position = Vector2(-19, 4)
-rest = Transform2D(1, 0, 0, 1, -19, 4)
-editor_settings/show_bone_gizmo = false
-
-[node name="RBicep" type="Sprite2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/RBicepBone2D"]
-texture = ExtResource("7_687da")
-offset = Vector2(9, 31)
-metadata/_edit_lock_ = true
-
-[node name="RForearmBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/RBicepBone2D"]
-position = Vector2(-24, 15)
-scale = Vector2(0.999999, 0.999999)
-rest = Transform2D(1, 0, 0, 1, -24, 15)
-editor_settings/show_bone_gizmo = false
-
-[node name="RForearm" type="Sprite2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/RBicepBone2D/RForearmBone2D"]
-texture = ExtResource("8_3ipax")
-offset = Vector2(31, 16)
-metadata/_edit_lock_ = true
-
-[node name="RHandBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/RBicepBone2D/RForearmBone2D"]
-position = Vector2(-24, 14)
-rest = Transform2D(1, 0, 0, 1, -24, 14)
-editor_settings/show_bone_gizmo = false
-
-[node name="RHand" type="Sprite2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/RBicepBone2D/RForearmBone2D/RHandBone2D"]
-texture = ExtResource("9_ex7k5")
-offset = Vector2(52, 3)
-metadata/_edit_lock_ = true
-
-[node name="LBicepBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D"]
-position = Vector2(21, 3)
-scale = Vector2(1, 1)
-rest = Transform2D(1, 0, 0, 1, 21, 3)
-editor_settings/show_bone_gizmo = false
-
-[node name="LBicep" type="Sprite2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/LBicepBone2D"]
-texture = ExtResource("4_5jk7e")
-offset = Vector2(-9, 27)
-metadata/_edit_lock_ = true
-
-[node name="LForearmBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/LBicepBone2D"]
-position = Vector2(24, 11)
-rest = Transform2D(1, 0, 0, 1, 24, 11)
-editor_settings/show_bone_gizmo = false
-
-[node name="LForearm" type="Sprite2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/LBicepBone2D/LForearmBone2D"]
-texture = ExtResource("5_vgbke")
-offset = Vector2(-31, 15)
-metadata/_edit_lock_ = true
-
-[node name="LHandBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/LBicepBone2D/LForearmBone2D"]
-position = Vector2(23, 14)
-scale = Vector2(1, 1)
-rest = Transform2D(1, 0, 0, 1, 23, 14)
-editor_settings/show_bone_gizmo = false
-
-[node name="LHand" type="Sprite2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/LBicepBone2D/LForearmBone2D/LHandBone2D"]
-texture = ExtResource("6_dw2xu")
-offset = Vector2(-52, 1)
-metadata/_edit_lock_ = true
+[node name="ColorRect" type="ColorRect" parent="Skeleton2D/HipsBone2D/Hips"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -75.0
+offset_top = -90.0
+offset_right = -75.0
+offset_bottom = -90.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.65098, 0.65098, 0.65098, 1)
 
 [node name="RThighBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D"]
 position = Vector2(-10, 6)
-scale = Vector2(1, 1)
+scale = Vector2(0.999995, 0.999995)
 rest = Transform2D(1, 0, 0, 1, -14, 6)
 editor_settings/show_bone_gizmo = false
 
 [node name="RThigh" type="Sprite2D" parent="Skeleton2D/HipsBone2D/RThighBone2D"]
+clip_children = 1
 texture = ExtResource("12_0qd6s")
 offset = Vector2(8, 8)
 metadata/_edit_lock_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Skeleton2D/HipsBone2D/RThighBone2D/RThigh"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -67.0
+offset_top = -67.0
+offset_right = -67.0
+offset_bottom = -67.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.6, 0.6, 0.6, 1)
 
 [node name="RCalfBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D/RThighBone2D"]
 position = Vector2(-4, 32)
@@ -1993,30 +2170,69 @@ rest = Transform2D(1, 0, 0, 1, -4, 32)
 editor_settings/show_bone_gizmo = false
 
 [node name="RCalf" type="Sprite2D" parent="Skeleton2D/HipsBone2D/RThighBone2D/RCalfBone2D"]
+clip_children = 1
 texture = ExtResource("13_3sgv2")
 offset = Vector2(11, -24)
 metadata/_edit_lock_ = true
 
+[node name="ColorRect" type="ColorRect" parent="Skeleton2D/HipsBone2D/RThighBone2D/RCalfBone2D/RCalf"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -99.0
+offset_right = -64.0
+offset_bottom = -99.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.54902, 0.54902, 0.54902, 1)
+
 [node name="RFootBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D/RThighBone2D/RCalfBone2D"]
 position = Vector2(-2, 33)
+scale = Vector2(0.999997, 0.999997)
 rest = Transform2D(1, 0, 0, 1, -2, 33)
 editor_settings/show_bone_gizmo = false
 
 [node name="RFoot" type="Sprite2D" parent="Skeleton2D/HipsBone2D/RThighBone2D/RCalfBone2D/RFootBone2D"]
+clip_children = 1
 texture = ExtResource("14_k5nvn")
 offset = Vector2(12, -54)
 metadata/_edit_lock_ = true
 
+[node name="ColorRect" type="ColorRect" parent="Skeleton2D/HipsBone2D/RThighBone2D/RCalfBone2D/RFootBone2D/RFoot"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -63.0
+offset_top = -129.0
+offset_right = -63.0
+offset_bottom = -129.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.501961, 0.501961, 0.501961, 1)
+
 [node name="LThighBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D"]
 position = Vector2(7, 7)
-scale = Vector2(1, 1)
 rest = Transform2D(1, 0, 0, 1, 10, 8)
 editor_settings/show_bone_gizmo = false
 
 [node name="LThigh" type="Sprite2D" parent="Skeleton2D/HipsBone2D/LThighBone2D"]
+clip_children = 1
 texture = ExtResource("15_lghwj")
 offset = Vector2(-8, 9)
 metadata/_edit_lock_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Skeleton2D/HipsBone2D/LThighBone2D/LThigh"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -83.0
+offset_top = -66.0
+offset_right = -83.0
+offset_bottom = -66.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.6, 0.6, 0.6, 1)
 
 [node name="LCalfBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D/LThighBone2D"]
 position = Vector2(3, 30)
@@ -2024,9 +2240,22 @@ rest = Transform2D(1, 0, 0, 1, 3, 30)
 editor_settings/show_bone_gizmo = false
 
 [node name="LCalf" type="Sprite2D" parent="Skeleton2D/HipsBone2D/LThighBone2D/LCalfBone2D"]
+clip_children = 1
 texture = ExtResource("16_20hwj")
 offset = Vector2(-11, -23)
 metadata/_edit_lock_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Skeleton2D/HipsBone2D/LThighBone2D/LCalfBone2D/LCalf"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -86.0
+offset_top = -98.0
+offset_right = -86.0
+offset_bottom = -98.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.54902, 0.54902, 0.54902, 1)
 
 [node name="LFootBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D/LThighBone2D/LCalfBone2D"]
 position = Vector2(3, 36)
@@ -2035,9 +2264,22 @@ rest = Transform2D(1, 0, 0, 1, 3, 36)
 editor_settings/show_bone_gizmo = false
 
 [node name="LFoot" type="Sprite2D" parent="Skeleton2D/HipsBone2D/LThighBone2D/LCalfBone2D/LFootBone2D"]
+clip_children = 1
 texture = ExtResource("17_7vclo")
 offset = Vector2(-15, -59)
 metadata/_edit_lock_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Skeleton2D/HipsBone2D/LThighBone2D/LCalfBone2D/LFootBone2D/LFoot"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -90.0
+offset_top = -134.0
+offset_right = -90.0
+offset_bottom = -134.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.501961, 0.501961, 0.501961, 1)
 
 [node name="SheathBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D"]
 position = Vector2(12, -2)
@@ -2046,15 +2288,276 @@ rest = Transform2D(1, 0, 0, 1, 12, -2)
 editor_settings/show_bone_gizmo = false
 
 [node name="Sheath" type="Sprite2D" parent="Skeleton2D/HipsBone2D/SheathBone2D"]
+clip_children = 1
 texture = ExtResource("18_e3rfs")
 offset = Vector2(-11, 2)
 metadata/_edit_lock_ = true
 
+[node name="ColorRect" type="ColorRect" parent="Skeleton2D/HipsBone2D/SheathBone2D/Sheath"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -86.0
+offset_top = -73.0
+offset_right = -86.0
+offset_bottom = -73.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.501961, 0.501961, 0.501961, 1)
+
+[node name="BellyBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D"]
+position = Vector2(-2, 0)
+scale = Vector2(0.999998, 0.999998)
+rest = Transform2D(1, 0, 0, 1, -2, 0)
+editor_settings/show_bone_gizmo = false
+
+[node name="Belly" type="Sprite2D" parent="Skeleton2D/HipsBone2D/BellyBone2D"]
+clip_children = 1
+texture = ExtResource("2_7j0f0")
+offset = Vector2(2, -23)
+metadata/_edit_lock_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Skeleton2D/HipsBone2D/BellyBone2D/Belly"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -73.0
+offset_top = -98.0
+offset_right = -73.0
+offset_bottom = -98.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.701961, 0.701961, 0.701961, 1)
+
+[node name="ChestBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D/BellyBone2D"]
+position = Vector2(-1, -46)
+scale = Vector2(0.999995, 0.999995)
+rest = Transform2D(1, 0, 0, 1, -1, -46)
+editor_settings/show_bone_gizmo = false
+
+[node name="Chest" type="Sprite2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D"]
+clip_children = 1
+texture = ExtResource("3_s34gx")
+offset = Vector2(3, 28)
+metadata/_edit_lock_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/Chest"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -72.0
+offset_top = -47.0
+offset_right = -72.0
+offset_bottom = -47.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.74902, 0.74902, 0.74902, 1)
+
+[node name="NeckBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D"]
+position = Vector2(-1, -6)
+scale = Vector2(0.999996, 0.999996)
+rest = Transform2D(1, 0, 0, 1, -1, -6)
+editor_settings/show_bone_gizmo = false
+
+[node name="Neck" type="Sprite2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/NeckBone2D"]
+clip_children = 1
+texture = ExtResource("10_kgwe6")
+offset = Vector2(2, 34)
+metadata/_edit_lock_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/NeckBone2D/Neck"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -73.0
+offset_top = -41.0
+offset_right = -73.0
+offset_bottom = -41.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.85098, 0.85098, 0.85098, 1)
+
+[node name="HeadBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/NeckBone2D"]
+position = Vector2(-4, -11)
+rest = Transform2D(1, 0, 0, 1, -4, -11)
+editor_settings/show_bone_gizmo = false
+
+[node name="Head" type="Sprite2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/NeckBone2D/HeadBone2D"]
+clip_children = 1
+texture = ExtResource("11_t50ms")
+offset = Vector2(3, 43)
+metadata/_edit_lock_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/NeckBone2D/HeadBone2D/Head"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -72.0
+offset_top = -32.0
+offset_right = -72.0
+offset_bottom = -32.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.901961, 0.901961, 0.901961, 1)
+
+[node name="RBicepBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D"]
+position = Vector2(-19, 4)
+rest = Transform2D(1, 0, 0, 1, -19, 4)
+editor_settings/show_bone_gizmo = false
+
+[node name="RBicep" type="Sprite2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/RBicepBone2D"]
+clip_children = 1
+texture = ExtResource("7_687da")
+offset = Vector2(9, 31)
+metadata/_edit_lock_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/RBicepBone2D/RBicep"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -66.0
+offset_top = -44.0
+offset_right = -66.0
+offset_bottom = -44.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.8, 0.8, 0.8, 1)
+
+[node name="RForearmBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/RBicepBone2D"]
+position = Vector2(-24, 15)
+scale = Vector2(0.999999, 0.999999)
+rest = Transform2D(1, 0, 0, 1, -24, 15)
+editor_settings/show_bone_gizmo = false
+
+[node name="RForearm" type="Sprite2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/RBicepBone2D/RForearmBone2D"]
+clip_children = 1
+texture = ExtResource("8_3ipax")
+offset = Vector2(31, 16)
+metadata/_edit_lock_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/RBicepBone2D/RForearmBone2D/RForearm"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -44.0
+offset_top = -59.0
+offset_right = -44.0
+offset_bottom = -59.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.85098, 0.85098, 0.85098, 1)
+
+[node name="RHandBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/RBicepBone2D/RForearmBone2D"]
+position = Vector2(-24, 14)
+rest = Transform2D(1, 0, 0, 1, -24, 14)
+editor_settings/show_bone_gizmo = false
+
+[node name="RHand" type="Sprite2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/RBicepBone2D/RForearmBone2D/RHandBone2D"]
+clip_children = 1
+texture = ExtResource("9_ex7k5")
+offset = Vector2(52, 3)
+metadata/_edit_lock_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/RBicepBone2D/RForearmBone2D/RHandBone2D/RHand"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -23.0
+offset_top = -72.0
+offset_right = -23.0
+offset_bottom = -72.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.901961, 0.901961, 0.901961, 1)
+
+[node name="LBicepBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D"]
+position = Vector2(21, 3)
+scale = Vector2(1, 1)
+rest = Transform2D(1, 0, 0, 1, 21, 3)
+editor_settings/show_bone_gizmo = false
+
+[node name="LBicep" type="Sprite2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/LBicepBone2D"]
+clip_children = 1
+texture = ExtResource("4_5jk7e")
+offset = Vector2(-9, 27)
+metadata/_edit_lock_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/LBicepBone2D/LBicep"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -84.0
+offset_top = -48.0
+offset_right = -84.0
+offset_bottom = -48.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.8, 0.8, 0.8, 1)
+
+[node name="LForearmBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/LBicepBone2D"]
+position = Vector2(24, 11)
+rest = Transform2D(1, 0, 0, 1, 24, 11)
+editor_settings/show_bone_gizmo = false
+
+[node name="LForearm" type="Sprite2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/LBicepBone2D/LForearmBone2D"]
+clip_children = 1
+texture = ExtResource("5_vgbke")
+offset = Vector2(-31, 15)
+metadata/_edit_lock_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/LBicepBone2D/LForearmBone2D/LForearm"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -106.0
+offset_top = -60.0
+offset_right = -106.0
+offset_bottom = -60.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.85098, 0.85098, 0.85098, 1)
+
+[node name="LHandBone2D" type="Bone2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/LBicepBone2D/LForearmBone2D"]
+position = Vector2(23, 14)
+scale = Vector2(1, 1)
+rest = Transform2D(1, 0, 0, 1, 23, 14)
+editor_settings/show_bone_gizmo = false
+
+[node name="LHand" type="Sprite2D" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/LBicepBone2D/LForearmBone2D/LHandBone2D"]
+clip_children = 1
+texture = ExtResource("6_dw2xu")
+offset = Vector2(-52, 1)
+metadata/_edit_lock_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Skeleton2D/HipsBone2D/BellyBone2D/ChestBone2D/LBicepBone2D/LForearmBone2D/LHandBone2D/LHand"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -127.0
+offset_top = -74.0
+offset_right = -127.0
+offset_bottom = -74.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.901961, 0.901961, 0.901961, 1)
+
 [node name="Sword" type="Sprite2D" parent="."]
+clip_children = 1
 position = Vector2(19, -3)
 rotation = 0.0172452
 texture = ExtResource("19_bdjw0")
 offset = Vector2(-12, 3)
+
+[node name="ColorRect" type="ColorRect" parent="Sword"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -87.0
+offset_top = -72.0
+offset_right = -87.0
+offset_bottom = -72.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

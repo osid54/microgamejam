@@ -1,3 +1,6 @@
+ColorRect
+TextureRect
+CanvasLayer
 Node2D
 AnimationPlayer
 Bone2D
@@ -7,13 +10,10 @@ LightOccluder2D
 PointLight2D
 DirectionalLight2D
 AnimatedSprite2D
-TextureRect
 Microgame
 GPUParticles2D
 Area2D
 CollisionShape2D
-CanvasLayer
-ColorRect
 CharacterBody2D
 Sprite2D
 InputLabel

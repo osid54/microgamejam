@@ -4,5 +4,8 @@ res://osid_games/swordGame/body/rigPlayer.tscn
 res://osid_games/swordGame/assets/bg.tscn
 res://osid_games/swordGame/assets/player.tscn
 res://osid_games/swordGame/assets/enemy.tscn
-res://osid_games/swordGame/main/swordDuelGame.gd
 res://osid_games/swordGame/body/rig.tscn
+res://osid_games/swordGame/main/swordDuelGame.gd
+res://osid_games/leafGame/main/goldenLeafGame.tscn
+res://singletons/GlobalData.gd
+res://osid_games/leafGame/main/goldenLeafGame.gd

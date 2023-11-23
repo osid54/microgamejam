@@ -6,8 +6,8 @@ var density := 80
 var xInterval : int
 var yInterval : int
 func _on_start_game():
-	xInterval = int(get_viewport().get_window().size.x/float(density))
-	yInterval = int((get_viewport().get_window().size.y-64)/float(density))
+	xInterval = int(1152/float(density))
+	yInterval = int((648-64)/float(density))
 	for i in yInterval:
 		leaves.append([])
 		for j in xInterval:
@@ -17,7 +17,7 @@ func _on_start_game():
 			l.move(64+i*density)
 			leaves[i].append(l)
 	leaves.pick_random().pick_random().makeGold()
-	$Selector.position = Vector2(get_viewport().get_window().size.x/2.0, (get_viewport().get_window().size.y-64)/2.0)
+	$Selector.position = Vector2(1152/2.0, (648-64)/2.0)
 	$Selector.visible = true
 
 func _on_timeout():

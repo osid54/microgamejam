@@ -9,7 +9,7 @@ var attack := false
 
 func _ready():
 	enemy.play("start_crouch")
-	player.play("player/start")
+	player.play("start")
 
 func _process(_delta):
 	if attack:
@@ -24,25 +24,27 @@ func _on_start_game():
 	go = true
 	#eyes pop in, unsheath
 	enemy.play("unsheath")
-	await get_tree().create_timer(1).timeout
+	await get_tree().create_timer(.8-.5*GlobalData.speed).timeout
 	go = false
 	enemy.play("slice")
 	if !attack and lose:
 		var tween = get_tree().create_tween().set_trans(Tween.TRANS_EXPO).set_ease(Tween.EASE_OUT)
 		tween.tween_property($enemy, "position", $enemy.position-Vector2(700,0), 1)
+		player.play("attack")
 		await get_tree().create_timer(1).timeout
 		print("!attack and lose")
-		#stabbed animation
+		player.play("attackDeath")
 		enemy.play("sheathBig")
 		await enemy.animation_finished
 		lost.emit()
 	elif attack and !lose:
 		var tween = get_tree().create_tween().set_trans(Tween.TRANS_EXPO).set_ease(Tween.EASE_OUT)
 		tween.tween_property($enemy, "position", $enemy.position-Vector2(600,0), 1)
-		playerMove()
-		player.play("player/attack")
+		playerMove(0)
+		player.play("attack")
 		await get_tree().create_timer(1).timeout
-		#cross animation
+		enemy.play("death")
+		player.play("win")
 		print("attack and !lose")
 		await enemy.animation_finished
 		won.emit()
@@ -53,7 +55,14 @@ func hit():
 		if go:
 			lose = false
 		else:
-			#attack but stabbed
+			go = false
+			enemy.play("slice")
+			playerMove(100)
+			player.play("attack")
+			await get_tree().create_timer(1).timeout
+			player.play("attackDeath")
+			enemy.play("sheathBig")
+			await enemy.animation_finished
 			print("attack and lose")
 			lost.emit()
 	go = false
@@ -63,6 +72,6 @@ func _on_timeout():
 #	if !lose:
 #		lost.emit()
 
-func playerMove():
+func playerMove(amount):
 	var tween = get_tree().create_tween().set_trans(Tween.TRANS_EXPO).set_ease(Tween.EASE_OUT)
-	tween.tween_property($player, "position", $player.position+Vector2(600,0), 1)
+	tween.tween_property($player, "position", $player.position+Vector2(550+amount,0), 1)
