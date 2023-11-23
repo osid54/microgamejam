@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ctgeqo7wi6tmp"
-path="res://.godot/imported/RThigh.png-6f95dfda4cd4ca3da1e4979e42eede0d.ctex"
+uid="uid://dqtangvlfscbu"
+path="res://.godot/imported/RForearm.png-8411c32f506a1d155d9b500684c73f6f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://body/parts/RThigh.png"
-dest_files=["res://.godot/imported/RThigh.png-6f95dfda4cd4ca3da1e4979e42eede0d.ctex"]
+source_file="res://osid_games/swordGame/body/parts/RForearm.png"
+dest_files=["res://.godot/imported/RForearm.png-8411c32f506a1d155d9b500684c73f6f.ctex"]
 
 [params]
 

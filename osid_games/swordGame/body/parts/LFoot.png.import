@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://s4jw8q3hho2h"
-path="res://.godot/imported/Hips.png-d13053bfe9692655d1392c8056035ba9.ctex"
+uid="uid://bluy3bcmlf3ql"
+path="res://.godot/imported/LFoot.png-7cbade151f5dfe59a529a19a3f7dd6f8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://body/parts/Hips.png"
-dest_files=["res://.godot/imported/Hips.png-d13053bfe9692655d1392c8056035ba9.ctex"]
+source_file="res://osid_games/swordGame/body/parts/LFoot.png"
+dest_files=["res://.godot/imported/LFoot.png-7cbade151f5dfe59a529a19a3f7dd6f8.ctex"]
 
 [params]
 

@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dea5m4ympg6b2"]
+
+[ext_resource type="PackedScene" uid="uid://c7oi4dk2a1jn0" path="res://osid_games/swordGame/body/rigPlayer.tscn" id="1_ey1rw"]
+
+[node name="player" type="Node2D"]
+
+[node name="rigPlayer" parent="." instance=ExtResource("1_ey1rw")]

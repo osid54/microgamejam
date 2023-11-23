@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://dt5r1xwgvm0lm"]
+[gd_scene load_steps=6 format=3 uid="uid://dt5r1xwgvm0lm"]
 
 [ext_resource type="PackedScene" uid="uid://cdh430445qvyh" path="res://Microgame.tscn" id="1_1q5ca"]
 [ext_resource type="Script" path="res://osid_games/swordGame/main/swordDuelGame.gd" id="2_jsng8"]
 [ext_resource type="PackedScene" uid="uid://k148lkh024xh" path="res://osid_games/swordGame/assets/bg.tscn" id="3_gchbb"]
 [ext_resource type="PackedScene" uid="uid://krnavtp0xe1d" path="res://osid_games/swordGame/assets/enemy.tscn" id="3_luvxd"]
+[ext_resource type="PackedScene" uid="uid://dea5m4ympg6b2" path="res://osid_games/swordGame/assets/player.tscn" id="5_35ato"]
 
 [node name="swordDuelGame" instance=ExtResource("1_1q5ca")]
 script = ExtResource("2_jsng8")
@@ -14,7 +15,11 @@ position = Vector2(576, 324)
 [node name="enemy" parent="." index="1" instance=ExtResource("3_luvxd")]
 position = Vector2(869, 479)
 
-[node name="MicrogameTimer" parent="." index="2"]
+[node name="player" parent="." index="2" instance=ExtResource("5_35ato")]
+modulate = Color(0.917647, 0.458824, 1, 1)
+position = Vector2(307, 480)
+
+[node name="MicrogameTimer" parent="." index="3"]
 min_time = 1.0
 max_time = 5.0
 

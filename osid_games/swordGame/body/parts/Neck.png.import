@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://co6tywg8by2jk"
-path="res://.godot/imported/LForearm.png-42528c0d2e66101e1ec6234303f58c8f.ctex"
+uid="uid://dortdleqfpdki"
+path="res://.godot/imported/Neck.png-aaeda100263774bbed2ec057e71f4ba2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://body/parts/LForearm.png"
-dest_files=["res://.godot/imported/LForearm.png-42528c0d2e66101e1ec6234303f58c8f.ctex"]
+source_file="res://osid_games/swordGame/body/parts/Neck.png"
+dest_files=["res://.godot/imported/Neck.png-aaeda100263774bbed2ec057e71f4ba2.ctex"]
 
 [params]
 

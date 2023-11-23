@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bu0u6sle3k3ol"
-path="res://.godot/imported/chest.png-54b6a57828653e3e9e32fe922a56b17c.ctex"
+uid="uid://bo15btqbkcgp2"
+path="res://.godot/imported/belly.png-c6461679554df8509a1ced4e52f9e31d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://body/parts/chest.png"
-dest_files=["res://.godot/imported/chest.png-54b6a57828653e3e9e32fe922a56b17c.ctex"]
+source_file="res://osid_games/swordGame/body/parts/belly.png"
+dest_files=["res://.godot/imported/belly.png-c6461679554df8509a1ced4e52f9e31d.ctex"]
 
 [params]
 

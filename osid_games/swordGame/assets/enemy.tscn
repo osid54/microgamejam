@@ -1,66 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://krnavtp0xe1d"]
+[gd_scene load_steps=2 format=3 uid="uid://krnavtp0xe1d"]
 
-[ext_resource type="Texture2D" uid="uid://bhc3ki50af4ex" path="res://osid_games/swordGame/sprites/swords1.png" id="1_6rqxy"]
-[ext_resource type="PackedScene" uid="uid://40ia4rdt4k5b" path="res://body/rig.tscn" id="2_wl385"]
+[ext_resource type="PackedScene" uid="uid://40ia4rdt4k5b" path="res://osid_games/swordGame/body/rig.tscn" id="2_wl385"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_41tu7"]
-atlas = ExtResource("1_6rqxy")
-region = Rect2(300, 0, 150, 150)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1oi27"]
-atlas = ExtResource("1_6rqxy")
-region = Rect2(750, 0, 150, 150)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7f6ib"]
-atlas = ExtResource("1_6rqxy")
-region = Rect2(600, 0, 150, 150)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_dn1ed"]
-atlas = ExtResource("1_6rqxy")
-region = Rect2(0, 0, 150, 150)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_egcit"]
-atlas = ExtResource("1_6rqxy")
-region = Rect2(150, 0, 150, 150)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_11j45"]
-atlas = ExtResource("1_6rqxy")
-region = Rect2(450, 0, 150, 150)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_t0u8c"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_41tu7")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1oi27")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_7f6ib")
-}],
-"loop": false,
-"name": &"sheath",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_dn1ed")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_egcit")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_11j45")
-}],
-"loop": false,
-"name": &"unsheath",
-"speed": 5.0
-}]
-
-[node name="enemy" type="AnimatedSprite2D"]
+[node name="enemy" type="Node2D"]
 self_modulate = Color(1, 1, 1, 0)
-sprite_frames = SubResource("SpriteFrames_t0u8c")
-animation = &"unsheath"
 
 [node name="rig" parent="." instance=ExtResource("2_wl385")]

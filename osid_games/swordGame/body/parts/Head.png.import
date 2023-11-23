@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b62cp2ys24q8y"
-path="res://.godot/imported/RHand.png-5e03831ca4dd8981ce414d7ad468af40.ctex"
+uid="uid://diiov7bvjj6r6"
+path="res://.godot/imported/Head.png-d214877ce17a1fe2769428178a75703b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://body/parts/RHand.png"
-dest_files=["res://.godot/imported/RHand.png-5e03831ca4dd8981ce414d7ad468af40.ctex"]
+source_file="res://osid_games/swordGame/body/parts/Head.png"
+dest_files=["res://.godot/imported/Head.png-d214877ce17a1fe2769428178a75703b.ctex"]
 
 [params]
 

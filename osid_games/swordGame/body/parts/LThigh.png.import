@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cd20fs7yqmxb5"
-path="res://.godot/imported/RBicep.png-0fd04a4c154c40bce2e65d32c10a6760.ctex"
+uid="uid://b6pgw1s5jbvme"
+path="res://.godot/imported/LThigh.png-736e9e363a8b5d92092c9c59dedf27e3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://body/parts/RBicep.png"
-dest_files=["res://.godot/imported/RBicep.png-0fd04a4c154c40bce2e65d32c10a6760.ctex"]
+source_file="res://osid_games/swordGame/body/parts/LThigh.png"
+dest_files=["res://.godot/imported/LThigh.png-736e9e363a8b5d92092c9c59dedf27e3.ctex"]
 
 [params]
 

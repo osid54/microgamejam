@@ -1,3 +1,4 @@
+Node2D
 AnimationPlayer
 Bone2D
 Skeleton2D
@@ -5,7 +6,6 @@ Marker2D
 LightOccluder2D
 PointLight2D
 DirectionalLight2D
-Node2D
 AnimatedSprite2D
 TextureRect
 Microgame
