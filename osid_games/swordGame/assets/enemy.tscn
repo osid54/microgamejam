@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://krnavtp0xe1d"]
+[gd_scene load_steps=10 format=3 uid="uid://krnavtp0xe1d"]
 
 [ext_resource type="Texture2D" uid="uid://bhc3ki50af4ex" path="res://osid_games/swordGame/sprites/swords1.png" id="1_6rqxy"]
+[ext_resource type="PackedScene" uid="uid://40ia4rdt4k5b" path="res://body/rig.tscn" id="2_wl385"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_41tu7"]
 atlas = ExtResource("1_6rqxy")
@@ -58,5 +59,8 @@ animations = [{
 }]
 
 [node name="enemy" type="AnimatedSprite2D"]
+self_modulate = Color(1, 1, 1, 0)
 sprite_frames = SubResource("SpriteFrames_t0u8c")
 animation = &"unsheath"
+
+[node name="rig" parent="." instance=ExtResource("2_wl385")]

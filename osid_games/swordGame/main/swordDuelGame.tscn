@@ -12,7 +12,7 @@ script = ExtResource("2_jsng8")
 position = Vector2(576, 324)
 
 [node name="enemy" parent="." index="1" instance=ExtResource("3_luvxd")]
-position = Vector2(858, 456)
+position = Vector2(869, 479)
 
 [node name="MicrogameTimer" parent="." index="2"]
 min_time = 1.0

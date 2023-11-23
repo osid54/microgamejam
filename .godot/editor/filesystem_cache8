@@ -1,11 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1700628147
+::res://::1700703270
 Microgame.gd::GDScript::-1::1700163448::0::1::::Microgame<>Node<>::
 Microgame.tscn::PackedScene::4999670696839735243::1700626231::0::1::::<><>::res://Microgame.gd<>res://MicrogameOverlay.gd<>res://MicrogameTimer.gd
 MicrogameOverlay.gd::GDScript::-1::1700163448::0::1::::<>CanvasLayer<>::
 MicrogameTimer.gd::GDScript::-1::1700446386::0::1::::<>Timer<>::
-::res://body/::1700627962
-rig.tscn::PackedScene::2087573194898243549::1700627962::0::1::::<><>::uid://s4jw8q3hho2h::::res://body/parts/Hips.png<>uid://bo15btqbkcgp2::::res://body/parts/belly.png<>uid://bu0u6sle3k3ol::::res://body/parts/chest.png<>uid://cu1msyefxwatu::::res://body/parts/LBicep.png<>uid://co6tywg8by2jk::::res://body/parts/LForearm.png<>uid://01lomnuesqgs::::res://body/parts/LHand.png<>uid://cd20fs7yqmxb5::::res://body/parts/RBicep.png<>uid://dqtangvlfscbu::::res://body/parts/RForearm.png<>uid://b62cp2ys24q8y::::res://body/parts/RHand.png<>uid://dortdleqfpdki::::res://body/parts/Neck.png<>uid://diiov7bvjj6r6::::res://body/parts/Head.png<>uid://ctgeqo7wi6tmp::::res://body/parts/RThigh.png<>uid://u47sp607sght::::res://body/parts/RCalf.png<>uid://ca2la8xtw4ku0::::res://body/parts/RFoot.png<>uid://b6pgw1s5jbvme::::res://body/parts/LThigh.png<>uid://bfkpkks6hd8ei::::res://body/parts/LCalf.png<>uid://bluy3bcmlf3ql::::res://body/parts/LFoot.png<>uid://cxvfntic7r6p0::::res://body/parts/Sheath.png<>uid://cp44qtd0t7aon::::res://body/parts/Sword.png
+::res://body/::1700628471
+rig.tscn::PackedScene::2087573194898243549::1700628471::0::1::::<><>::uid://s4jw8q3hho2h::::res://body/parts/Hips.png<>uid://bo15btqbkcgp2::::res://body/parts/belly.png<>uid://bu0u6sle3k3ol::::res://body/parts/chest.png<>uid://cu1msyefxwatu::::res://body/parts/LBicep.png<>uid://co6tywg8by2jk::::res://body/parts/LForearm.png<>uid://01lomnuesqgs::::res://body/parts/LHand.png<>uid://cd20fs7yqmxb5::::res://body/parts/RBicep.png<>uid://dqtangvlfscbu::::res://body/parts/RForearm.png<>uid://b62cp2ys24q8y::::res://body/parts/RHand.png<>uid://dortdleqfpdki::::res://body/parts/Neck.png<>uid://diiov7bvjj6r6::::res://body/parts/Head.png<>uid://ctgeqo7wi6tmp::::res://body/parts/RThigh.png<>uid://u47sp607sght::::res://body/parts/RCalf.png<>uid://ca2la8xtw4ku0::::res://body/parts/RFoot.png<>uid://b6pgw1s5jbvme::::res://body/parts/LThigh.png<>uid://bfkpkks6hd8ei::::res://body/parts/LCalf.png<>uid://bluy3bcmlf3ql::::res://body/parts/LFoot.png<>uid://cxvfntic7r6p0::::res://body/parts/Sheath.png<>uid://cp44qtd0t7aon::::res://body/parts/Sword.png
 _body.png::CompressedTexture2D::4894010465289059796::1700623073::1700623073::1::::<><>::
 ::res://body/parts/::1700623073
 belly.png::CompressedTexture2D::3424562634527415681::1700623073::1700623073::1::::<><>::
@@ -49,12 +49,12 @@ selector.png::CompressedTexture2D::8922260694811744271::1700264285::1700446671::
 success.png::CompressedTexture2D::4587319027459084707::1700445933::1700446671::1::::<><>::
 ::res://osid_games/swordGame/::1700521383
 ::res://osid_games/swordGame/assets/::1700626231
-bg.tscn::PackedScene::757382575532414673::1700626231::0::1::::<><>::uid://dpu0r0fiy1sjo::::res://osid_games/swordGame/sprites/background/1.png<>uid://ufa6p74qp3fn::::res://osid_games/swordGame/sprites/background/2.png<>uid://bbus5yipiw68::::res://osid_games/swordGame/sprites/background/4.png<>uid://bwucb38jpd2m5::::res://osid_games/swordGame/sprites/background/sky.png<>uid://6ioaopn5a7wr::::res://osid_games/swordGame/sprites/background/moon.png<>uid://bx12pa3lpgnau::::res://osid_games/swordGame/sprites/background/hill1.png<>uid://bv20jpecqtbio::::res://osid_games/swordGame/sprites/background/hill2.png<>uid://dd4xd473jfn84::::res://osid_games/swordGame/sprites/background/tree1.png<>uid://ogtnhek4rxa6::::res://osid_games/swordGame/sprites/background/tree2.png<>uid://brrbcjd4c6k50::::res://osid_games/swordGame/sprites/background/tree3.png<>uid://cprmpvssfbosa::::res://osid_games/swordGame/sprites/background/tree4.png<>uid://dbr1kmy3qlb6b::::res://osid_games/swordGame/sprites/background/leaves (1).png<>uid://03qn3kscd67f::::res://osid_games/swordGame/sprites/background/leaves (2).png<>uid://3yfgmg2hljbu::::res://osid_games/swordGame/sprites/background/leaves (3).png<>uid://dgnsoneyy5via::::res://osid_games/swordGame/sprites/background/leaves (4).png<>uid://ck6jnu40m0vp7::::res://osid_games/swordGame/sprites/background/leaves (5).png<>uid://01xuojvax70c::::res://osid_games/swordGame/sprites/background/leaves (6).png<>uid://by67sc5w0yktx::::res://osid_games/swordGame/sprites/background/leaves (7).png<>uid://8apgg5pxoisa::::res://osid_games/swordGame/sprites/background/leaves (8).png<>uid://1top4cyqxhx::::res://osid_games/swordGame/sprites/background/leaves (9).png<>uid://cct4g8lxre6lu::::res://osid_games/swordGame/sprites/background/3.png<>res://osid_games/swordGame/assets/lightMover.gd
-enemy.tscn::PackedScene::737773312162790255::1700626231::0::1::::<><>::uid://bhc3ki50af4ex::::res://osid_games/swordGame/sprites/swords1.png
+bg.tscn::PackedScene::757382575532414673::1700626231::0::1::::<><>::uid://dpu0r0fiy1sjo
+enemy.tscn::PackedScene::737773312162790255::1700626231::0::1::::<><>::uid://bhc3ki50af4ex
 lightMover.gd::GDScript::-1::1700537418::0::1::::<>PointLight2D<>::
 ::res://osid_games/swordGame/main/::1700626231
 swordDuelGame.gd::GDScript::-1::1700536585::0::1::::<>Microgame<>::
-swordDuelGame.tscn::PackedScene::8555861274666195926::1700626231::0::1::::<><>::uid://cdh430445qvyh::::res://Microgame.tscn<>res://osid_games/swordGame/main/swordDuelGame.gd<>uid://k148lkh024xh::::res://osid_games/swordGame/assets/bg.tscn<>uid://krnavtp0xe1d::::res://osid_games/swordGame/assets/enemy.tscn
+swordDuelGame.tscn::PackedScene::8555861274666195926::1700626231::0::1::::<><>::uid://cdh430445qvyh
 ::res://osid_games/swordGame/sprites/::1700535016
 swords1.png::CompressedTexture2D::2883589746071006683::1700521553::1700521747::1::::<><>::
 ::res://osid_games/swordGame/sprites/background/::1700535018

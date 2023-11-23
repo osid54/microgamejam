@@ -1,1 +1,7 @@
 res://body/rig.tscn
+res://osid_games/swordGame/assets/enemy.tscn
+res://osid_games/swordGame/main/swordDuelGame.gd
+res://Microgame.tscn
+res://osid_games/swordGame/main/swordDuelGame.tscn
+res://osid_games/swordGame/assets/bg.tscn
+res://osid_games/swordGame/assets/lightMover.gd
