@@ -1,0 +1,63 @@
+[gd_scene load_steps=9 format=3 uid="uid://cbfu6v1xoyvsh"]
+
+[ext_resource type="PackedScene" uid="uid://cdh430445qvyh" path="res://Microgame.tscn" id="1_nldqr"]
+[ext_resource type="Script" path="res://osid_games/fireGame/main/fireRainGame.gd" id="2_tcr5c"]
+[ext_resource type="Script" path="res://osid_games/fireGame/assets/fireBall.gd" id="3_p6mlt"]
+
+[sub_resource type="Curve2D" id="Curve2D_d277i"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 200, 200, 0, 0, 0, 0, 952, 200)
+}
+point_count = 2
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_h051i"]
+size = Vector2(320, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7wdhp"]
+size = Vector2(320, 300)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_liutp"]
+size = Vector2(64, 64)
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_3eukl"]
+size = Vector2(64, 64)
+
+[node name="Microgame" instance=ExtResource("1_nldqr")]
+script = ExtResource("2_tcr5c")
+
+[node name="ActionLabel" parent="MicrogameOverlay/Control" index="2"]
+text = "stay dry"
+
+[node name="Path2D" type="Path2D" parent="." index="2"]
+curve = SubResource("Curve2D_d277i")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D" index="0"]
+position = Vector2(576, 200)
+progress = 376.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Path2D/PathFollow2D" index="0"]
+texture = SubResource("PlaceholderTexture2D_h051i")
+
+[node name="Area2D" type="Area2D" parent="Path2D/PathFollow2D" index="1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D/Area2D" index="0"]
+position = Vector2(0, 142)
+shape = SubResource("RectangleShape2D_7wdhp")
+
+[node name="fireBall" type="CharacterBody2D" parent="." index="3"]
+position = Vector2(576, 450)
+motion_mode = 1
+script = ExtResource("3_p6mlt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fireBall" index="0"]
+shape = SubResource("RectangleShape2D_liutp")
+
+[node name="Sprite2D" type="Sprite2D" parent="fireBall" index="1"]
+texture = SubResource("PlaceholderTexture2D_3eukl")
+
+[node name="Area2D" type="Area2D" parent="fireBall" index="2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fireBall/Area2D" index="0"]
+shape = SubResource("RectangleShape2D_liutp")
+
+[connection signal="area_exited" from="fireBall/Area2D" to="." method="fireballOut"]

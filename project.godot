@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="microgamejam"
-run/main_scene="res://osid_games/leafGame/main/goldenLeafGame.tscn"
+run/main_scene="res://osid_games/fireGame/main/fireRainGame.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://unused/mine.png"
 
@@ -23,8 +23,6 @@ Saver="*res://singletons/Saver.gd"
 
 [display]
 
-window/size/mode=3
-window/size/borderless=true
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 window/main_scene="res://osid_games/leafGame/main/goldenLeafGame.tscn"

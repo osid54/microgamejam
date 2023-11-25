@@ -1,3 +1,10 @@
+Area2D
+CollisionShape2D
+Sprite2D
+CharacterBody2D
+Microgame
+PathFollow2D
+Path2D
 ColorRect
 TextureRect
 CanvasLayer
@@ -10,12 +17,7 @@ LightOccluder2D
 PointLight2D
 DirectionalLight2D
 AnimatedSprite2D
-Microgame
 GPUParticles2D
-Area2D
-CollisionShape2D
-CharacterBody2D
-Sprite2D
 InputLabel
 Timer
 ProgressBar
