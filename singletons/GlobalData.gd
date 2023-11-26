@@ -7,4 +7,4 @@ extends Node
 ## this is the current speed of the game.
 ## it will start at 0.0, and gradually approach 1.0 as the game progresses.
 ## it is your responsibility to make your microgame get faster with this variable.
-var speed: float = 1
+var speed: float = 0

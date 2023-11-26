@@ -1,3 +1,5 @@
+AnimatedSprite2D
+GPUParticles2D
 Area2D
 CollisionShape2D
 Sprite2D
@@ -16,8 +18,6 @@ Marker2D
 LightOccluder2D
 PointLight2D
 DirectionalLight2D
-AnimatedSprite2D
-GPUParticles2D
 InputLabel
 Timer
 ProgressBar

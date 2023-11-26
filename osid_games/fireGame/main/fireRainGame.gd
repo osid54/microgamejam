@@ -10,12 +10,14 @@ func _ready():
 	player.position.x = 1152/2.0
 	set_process(false)
 
-func _process(_delta):
+func _process(delta):
 	if lose:
 		set_process(false)
 		return
 	if go:
 		move()
+	$Path2D/PathFollow2D/Sprite2D.rotation+=randf_range(-PI/4,PI/4)*delta
+	player.position.y+=randi_range(-32,32)*delta
 
 func _on_start_game():
 	set_process(true)
