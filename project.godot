@@ -12,7 +12,7 @@ config_version=5
 
 config/name="microgamejam"
 run/main_scene="res://osid_games/swordGame/main/swordDuelGame.tscn"
-config/features=PackedStringArray("4.1", "Forward Plus")
+config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://osid_games/fireGame/sprites/fireball.png"
 
 [autoload]

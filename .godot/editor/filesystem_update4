@@ -1,5 +1,4 @@
 res://Microgame.tscn
 res://osid_games/fireGame/main/fireRainGame.tscn
-res://osid_games/fireGame/main/fireRainGame.gd
-res://osid_games/fireGame/assets/fireBall.gd
-res://singletons/GlobalData.gd
+res://osid_games/swordGame/main/swordDuelGame.tscn
+res://osid_games/leafGame/main/goldenLeafGame.tscn
